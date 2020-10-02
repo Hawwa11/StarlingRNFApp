@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525752060911",
+    "firebase_url": "https://starlingrnfapp.firebaseio.com",
+    "project_id": "starlingrnfapp",
+    "storage_bucket": "starlingrnfapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525752060911:android:9e73e5be52145071b6c41a",
+        "android_client_info": {
+          "package_name": "com.example.android.starlingrnfapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGzQzf9k1uxfnGKFl3cQ0lHIXXEXHv4IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
