@@ -12,15 +12,7 @@
     tools:context=".LoginActivity"
     android:background="@drawable/background1">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="268dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="68dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/starling_logo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="16dp" />
+
 
     <TextView
         android:id="@+id/email"
@@ -28,7 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="176dp"
-        android:textColor="@color/white"
         android:text="Email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +45,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="300dp"
-        android:textColor="@color/white"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -112,7 +102,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:textColor="@color/white"
         android:text="Sign up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -124,7 +113,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:textColor="@color/white"
         android:text="Switch to staff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,5 +133,13 @@
         app:layout_constraintStart_toStartOf="@+id/etpass"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/starling_logo"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="-10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
