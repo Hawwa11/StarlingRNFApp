@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">StarlingRNFApp</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">john@gmail.com</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_email">&#160;&#160;john@gmail.com</string>
+    <string name="prompt_password">&#160;&#160;Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
