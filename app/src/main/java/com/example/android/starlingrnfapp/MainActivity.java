@@ -42,7 +42,7 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         case R.id.nav_main:
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
         break;
-        case R.id.nav_reserveparking:
+        case R.id.nav_reserveform:
         startActivity(new Intent(getApplicationContext(),ReserveForm.class));
         break;
         case R.id.nav_logout:
