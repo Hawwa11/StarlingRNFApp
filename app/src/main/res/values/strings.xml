@@ -12,4 +12,6 @@
     <string name="any">qedscdv</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="forgot_password">Forgot your password? </string>
+    <string name="forgot_password2">Dont worry! Just fill in your email address and we will send a link to reset your password!</string>
 </resources>
