@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".ReserveForm">
 
+    <TextView
+        android:id="@+id/reserve_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/reserve_timeslot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timeslot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/reserve_pax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbe of pax"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
