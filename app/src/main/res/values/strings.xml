@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">StarlingRNFApp</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">&#160;&#160;john@gmail.com</string>
-    <string name="prompt_password">&#160;&#160;Password</string>
+    <string name="prompt_email">Email </string>
+    <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
@@ -12,4 +12,6 @@
     <string name="any">qedscdv</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="forgot_password">Forgot your password? </string>
+    <string name="forgot_password2">Dont worry! Just fill in your email address and we will send a link to reset your password!</string>
 </resources>
