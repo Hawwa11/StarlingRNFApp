@@ -18,7 +18,7 @@ public class ManagerDashboard extends AppCompatActivity {
         createstaff = findViewById(R.id.btncreatestaff);
 
 
-        
+
         createstaff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
