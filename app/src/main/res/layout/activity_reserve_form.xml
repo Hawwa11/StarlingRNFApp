@@ -13,7 +13,7 @@
         tools:context=".ReserveForm"
         tools:layout_editor_absoluteX="61dp"
         tools:layout_editor_absoluteY="-4dp">
-        
+
         <DatePicker
             android:id="@+id/datePicker1"
             android:layout_width="302dp"
