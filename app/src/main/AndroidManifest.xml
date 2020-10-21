@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateStaffAccount"></activity>
+        <activity android:name=".CreateStaff"></activity>
+        <activity android:name=".ManagerDashboard" />
         <activity android:name=".StaffDashboard" />
         <activity android:name=".StaffLogin" />
         <activity android:name=".ReserveForm" />

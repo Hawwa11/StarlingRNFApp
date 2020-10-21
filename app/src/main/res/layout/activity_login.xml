@@ -5,10 +5,6 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".LoginActivity"
     android:background="@color/light">
 
@@ -17,45 +13,40 @@
         android:id="@+id/imageView5"
         android:layout_width="289dp"
         android:layout_height="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/starling_logo" />
-
 
     <EditText
         android:id="@+id/etemail"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="232dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:height="10dp"
         android:background="@drawable/textbox"
         android:gravity="center"
         android:hint="@string/prompt_email"
-        android:textSize="20sp"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
         android:id="@+id/etpass"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="44dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/textbox"
-        android:hint="@string/prompt_password"
         android:gravity="center"
+        android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etemail" />
 
@@ -63,40 +54,38 @@
         android:id="@+id/tvforgetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="32dp"
         android:text="Forget password"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etpass" />
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
 
     <Button
         android:id="@+id/btnlogin"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:text="login"
-        android:textStyle="bold"
-        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
         android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etpass"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintTop_toBottomOf="@+id/etpass" />
 
     <TextView
         android:id="@+id/tvsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Sign up"
+        android:layout_marginTop="24dp"
+        android:text="Already have an account? Sign up."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/tvforgetpass" />
 
     <TextView
         android:id="@+id/tvswitch"
@@ -105,7 +94,6 @@
         android:layout_marginTop="20dp"
         android:text="Switch to staff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvsignup" />
 
