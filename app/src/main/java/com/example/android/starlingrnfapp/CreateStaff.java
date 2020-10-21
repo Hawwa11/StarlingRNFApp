@@ -24,36 +24,29 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import android.os.Bundle;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public class SignupActivity extends AppCompatActivity {
-    private static final String TAG = "Signup";
+public class CreateStaff extends AppCompatActivity {
 
+    private static final String TAG ="CreateStaff";
     EditText name,email,password,cpassword,phone;
-    CheckBox agree;
-    Button signup;
+    Button createaccount;
     FirebaseAuth fAuth;
     String userID;
     FirebaseUser user;
     FirebaseFirestore fStore;
-    Button goLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_create_staff);
+        name = findViewById(R.id.etsname);
+        email =findViewById(R.id.etsemail);
+        password =findViewById(R.id.etspass);
+        cpassword =findViewById(R.id.etscpass);
+        phone =findViewById(R.id.etsphoneno);
 
-        name = findViewById(R.id.etname);
-        email =findViewById(R.id.etemail);
-        password =findViewById(R.id.etpass);
-        cpassword =findViewById(R.id.etcpass);
-        phone =findViewById(R.id.etphoneno);
-        agree =findViewById(R.id.cb_agree);
-        signup = findViewById(R.id.btn_signup);
-        goLogin=findViewById(R.id.btn_gologin);
 
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
@@ -61,7 +54,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        createaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String Email = email.getText().toString().trim();
@@ -85,19 +78,13 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
 
-//
-
-                if(agree.isChecked()==false){
-                    password.setError("Please agree to term and conditions.");
-                    return;
-                }
 
                 //create user account
                 fAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(SignupActivity.this,"Account Created.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateStaff.this,"Account Created.", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documenentReference = fStore.collection("users").document(userID);
                             Map<String, Object> user = new HashMap<>();
@@ -114,7 +101,7 @@ public class SignupActivity extends AppCompatActivity {
 
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         } else{
-                            Toast.makeText(SignupActivity.this, "Error! "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateStaff.this, "Error! "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
                         }
                     }
@@ -124,12 +111,5 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        goLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            }
-        });
     }
 }
