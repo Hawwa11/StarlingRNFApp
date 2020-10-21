@@ -46,12 +46,12 @@ public class CreateStaff extends AppCompatActivity {
         password =findViewById(R.id.etspass);
         cpassword =findViewById(R.id.etscpass);
         phone =findViewById(R.id.etsphoneno);
+        createaccount= findViewById(R.id.btn_create);
 
 
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         user = fAuth.getCurrentUser();
-
 
 
         createaccount.setOnClickListener(new View.OnClickListener() {
@@ -85,8 +85,10 @@ public class CreateStaff extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(CreateStaff.this,"Account Created.", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
-                            DocumentReference documenentReference = fStore.collection("users").document(userID);
+
+                            FirebaseUser staff = task.getResult().getUser();
+                            userID = staff.getUid();
+                            DocumentReference documenentReference = fStore.collection("staff").document(userID);
                             Map<String, Object> user = new HashMap<>();
                             user.put("fname",Name);
                             user.put("email",Email);
@@ -108,8 +110,11 @@ public class CreateStaff extends AppCompatActivity {
                 });
 
 
+
+
             }
         });
+
 
     }
 }
