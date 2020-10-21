@@ -20,7 +20,7 @@
                 android:background="#6E6868"
                 android:text="Create Account"
                 android:textColor="@android:color/white"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.471"
                 app:layout_constraintStart_toStartOf="parent"
