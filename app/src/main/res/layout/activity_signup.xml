@@ -165,7 +165,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        android:text="go to login"
+        android:text="Already have an account? Sign in."
         android:textAllCaps="false"
         android:textColor="#501C60"
         android:textSize="18sp"
