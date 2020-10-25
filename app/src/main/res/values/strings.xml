@@ -14,4 +14,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="forgot_password">Forgot your password? </string>
     <string name="forgot_password2">Dont worry! Just fill in your email address and we will send a link to reset your password!</string>
+    <string name="condetails">Confirm Details</string>
+    <string name="conname">Name</string>
+    <string name="conemail">Email</string>
+    <string name="conhp">Handphone number</string>
 </resources>
