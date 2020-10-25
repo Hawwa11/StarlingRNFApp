@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyReservation">
+
+    <TextView
+        android:id="@+id/rname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Name"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rphone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Phone"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/rname"
+        app:layout_constraintTop_toBottomOf="@+id/rname" />
+
+
+    <TextView
+        android:id="@+id/rtime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Time"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/rdate"
+        app:layout_constraintTop_toBottomOf="@+id/rdate" />
+
+    <TextView
+        android:id="@+id/rdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Date"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/remail"
+        app:layout_constraintTop_toBottomOf="@+id/remail" />
+
+    <TextView
+        android:id="@+id/rpax"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Pax"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/rtime"
+        app:layout_constraintTop_toBottomOf="@+id/rtime" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Reservations Made Yet!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textColor="#707070"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/rphone"
+        app:layout_constraintTop_toBottomOf="@+id/rphone" />
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Edit"
+        app:layout_constraintEnd_toStartOf="@+id/btndelete"
+        app:layout_constraintStart_toEndOf="@+id/btnback"
+        app:layout_constraintTop_toBottomOf="@+id/rpax" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpax" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpax" />
+</androidx.constraintlayout.widget.ConstraintLayout>

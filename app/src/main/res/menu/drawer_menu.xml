@@ -14,6 +14,9 @@
             android:id="@+id/nav_reserveform"
             android:title="Reservation Form" />
         <item
+            android:id="@+id/nav_myreservation"
+            android:title="My Reservation" />
+        <item
             android:id="@+id/nav_helpcenter"
             android:icon="@drawable/ic_help"
             android:title="Help Center" />

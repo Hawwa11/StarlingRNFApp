@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "525752060911",
+    "firebase_url": "https://starlingrnfapp.firebaseio.com",
+    "project_id": "starlingrnfapp",
+    "storage_bucket": "starlingrnfapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525752060911:android:9e73e5be52145071b6c41a",
+        "android_client_info": {
+          "package_name": "com.example.android.starlingrnfapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525752060911-f7g3l4a2nssg1t5r12ngjrfoq2lknh3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.starlingrnfapp",
+            "certificate_hash": "838da99453ef34da032abed32aecebe4d2919a34"
+          }
+        },
+        {
+          "client_id": "525752060911-p0h3gm3fhrs7pitdnpafl4cm0gqnjobv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.starlingrnfapp",
+            "certificate_hash": "89fd98be6e69f2b11c87b63a89afee4cb2b6a719"
+          }
+        },
+        {
+          "client_id": "525752060911-a3upc2rq8oaji6t03oha3osrc31to4v6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.starlingrnfapp",
+            "certificate_hash": "a940b0312f17760759ff4c5c91c38529f69cedec"
+          }
+        },
+        {
+          "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGzQzf9k1uxfnGKFl3cQ0lHIXXEXHv4IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525752060911:android:179eeae68fc68de3b6c41a",
+        "android_client_info": {
+          "package_name": "com.example.starlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525752060911-scp180i6nj1165b1a3dlrlekis3gg69p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.starlin",
+            "certificate_hash": "838da99453ef34da032abed32aecebe4d2919a34"
+          }
+        },
+        {
+          "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGzQzf9k1uxfnGKFl3cQ0lHIXXEXHv4IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525752060911-ki704ktils5mt4a1etic1s88i219hs6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

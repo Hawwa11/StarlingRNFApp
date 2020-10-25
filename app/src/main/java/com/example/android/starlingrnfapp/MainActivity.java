@@ -45,6 +45,9 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         case R.id.nav_reserveform:
         startActivity(new Intent(getApplicationContext(),ReserveForm.class));
         break;
+        case R.id.nav_myreservation:
+        startActivity(new Intent(getApplicationContext(),MyReservation.class));
+        break;
         case R.id.nav_logout:
         Toast.makeText(this, "Logged Out.", Toast.LENGTH_SHORT).show();
         FirebaseAuth.getInstance().signOut();
