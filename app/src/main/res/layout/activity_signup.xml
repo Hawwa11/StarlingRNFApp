@@ -12,7 +12,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".SignupActivity">
 
-            <Button
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/starling_logo" />
+
+    <Button
                 android:id="@+id/btn_signup"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
@@ -43,8 +52,9 @@
                 android:id="@+id/etphoneno"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
-                android:background="@android:color/white"
+                android:background="@drawable/textbox"
                 android:ems="10"
+                android:textSize="20sp"
                 android:hint="Enter Contact No."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,9 +64,10 @@
                 android:id="@+id/etemail"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
-                android:background="@android:color/white"
+                android:background="@drawable/textbox"
                 android:ems="10"
                 android:hint="Enter Email"
+                android:textSize="20sp"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,8 +79,9 @@
                 android:id="@+id/etcpass"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
-                android:background="@android:color/white"
+                android:background="@drawable/textbox"
                 android:ems="10"
+        android:textSize="20sp"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -81,8 +93,9 @@
                 android:id="@+id/etname"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
-                android:background="@android:color/white"
+                android:background="@drawable/textbox"
                 android:ems="10"
+                android:textSize="20sp"
                 android:hint="Enter Name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -92,9 +105,10 @@
                 android:id="@+id/etpass"
                 android:layout_width="340dp"
                 android:layout_height="50dp"
-                android:background="@android:color/white"
+                android:background="@drawable/textbox"
                 android:ems="10"
                 android:hint="Enter Password"
+                android:textSize="20sp"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -108,8 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="Phone Number"
-                android:textColor="#501C60"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="@+id/etphoneno"
                 app:layout_constraintTop_toBottomOf="@+id/etemail" />
 
@@ -119,8 +133,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="Email Address"
-                android:textColor="#501C60"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="@+id/tvno"
                 app:layout_constraintTop_toBottomOf="@+id/etcpass" />
 
@@ -130,8 +144,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Password"
-        android:textColor="#501C60"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/tvcpass"
         app:layout_constraintTop_toBottomOf="@+id/etname" />
 
@@ -139,12 +153,12 @@
         android:id="@+id/tvname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Full Name"
-        android:textColor="#501C60"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/tvpass"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
             <TextView
                 android:id="@+id/tvcpass"
@@ -152,8 +166,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="Confirm Password"
-                android:textColor="#501C60"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="@+id/tvemail"
                 app:layout_constraintTop_toBottomOf="@+id/etpass" />
 
