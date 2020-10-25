@@ -32,6 +32,7 @@ public static final String TAG = "ReserverForm";
 
         Bundle bundle = getIntent().getExtras();
 
+        datePicker.setMinDate(System.currentTimeMillis() - 1000);
         datePicker.init(
                 datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(),
                 new DatePicker.OnDateChangedListener() {
