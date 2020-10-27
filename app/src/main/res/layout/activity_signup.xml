@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/btn_signup"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@color/darkblue"
@@ -50,76 +50,80 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etphoneno" />
 
-            <EditText
-                android:id="@+id/etphoneno"
-                android:layout_width="340dp"
-                android:layout_height="50dp"
-                android:background="@drawable/textbox"
-                android:includeFontPadding="true"
-                android:paddingLeft="5dp"
-                android:textSize="20sp"
-                android:hint="Enter Contact No."
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvno" />
-
-            <EditText
-                android:id="@+id/etemail"
-                android:layout_width="340dp"
-                android:layout_height="50dp"
-                android:background="@drawable/textbox"
-                android:includeFontPadding="true"
-                android:paddingLeft="5dp"
-                android:hint="Enter Email"
-                android:textSize="20sp"
-                android:inputType="textEmailAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvemail"
-               />
-
-
     <EditText
-                android:id="@+id/etcpass"
-                android:layout_width="340dp"
-                android:layout_height="50dp"
-                android:background="@drawable/textbox"
+        android:id="@+id/etphoneno"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Contact No."
         android:includeFontPadding="true"
         android:paddingLeft="5dp"
         android:textSize="20sp"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvcpass" />
-
-
-            <EditText
-                android:id="@+id/etname"
-                android:layout_width="340dp"
-                android:layout_height="50dp"
-                android:background="@drawable/textbox"
-                android:textSize="20sp"
-                android:includeFontPadding="true"
-                android:paddingLeft="10dp"
-                android:hint="Enter Name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvname" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvno" />
 
     <EditText
-                android:id="@+id/etpass"
-                android:layout_width="340dp"
-                android:layout_height="50dp"
-                android:background="@drawable/textbox"
-                android:hint="Enter Password"
-            android:includeFontPadding="true"
-            android:paddingLeft="5dp"
-                android:textSize="20sp"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvpass" />
+        android:id="@+id/etemail"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Email"
+        android:includeFontPadding="true"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail" />
+
+
+    <EditText
+        android:id="@+id/etcpass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbox"
+        android:hint="Confirm Password"
+        android:includeFontPadding="true"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcpass" />
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Name"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Password"
+        android:includeFontPadding="true"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpass" />
 
 
     <TextView
@@ -187,8 +191,7 @@
         android:background="@android:color/transparent"
         android:text="Already have an account? Sign in."
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textColor="@color/darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
