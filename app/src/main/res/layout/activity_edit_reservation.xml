@@ -55,13 +55,14 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
-        android:hint="Enter Date (eg: 31/9/2020)"
+        android:hint="Enter Date (eg: 2020-9-11)"
         android:includeFontPadding="true"
         android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/erphoneno" />
+
 
 
     <EditText
@@ -84,9 +85,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
-        android:hint="Enter Time (eg: 1:00pm)"
+        android:hint="Enter Time (eg: 1PM)"
         android:includeFontPadding="true"
-        android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

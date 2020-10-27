@@ -39,9 +39,9 @@ public static final String TAG = "ReserverForm";
                     @Override
                     public void onDateChanged(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
                        selectedYear = year;
-                       selectedMonth = monthOfYear;
+                       selectedMonth = monthOfYear+1;
                       selectedDay = dayOfMonth;
-                      date = selectedDay + "/" + selectedMonth + "/" + selectedYear;
+                      date = selectedYear  + "-" + selectedMonth + "-" + selectedDay;
                         Log.d(TAG, "selectedDate = " + selectedYear  + "-" + selectedMonth + "-" + selectedDay );
                     }
                 });
@@ -63,27 +63,27 @@ public static final String TAG = "ReserverForm";
 
 
     public void rb1(View view) {
-        time = "12PM - 1PM";
+        time = "12PM";
 
     }
     public void rb2(View view) {
-        time = "1PM - 2PM";
+        time = "1PM";
 
     }
     public void rb3(View view) {
-        time = "2PM - 3PM";
+        time = "2PM";
 
     }
     public void rb4(View view) {
-        time = "6PM - 7PM";
+        time = "6PM";
 
     }
     public void rb5(View view) {
-        time = "7PM - 8PM";
+        time = "7PM";
 
     }
     public void rb6(View view) {
-        time = "8PM - 9PM";
+        time = "8PM";
 
     }
 

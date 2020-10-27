@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/etemail2"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:layout_marginTop="52dp"
         android:height="10dp"
         android:background="@drawable/textbox"
@@ -37,8 +37,8 @@
 
     <EditText
         android:id="@+id/etpass2"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/textbox"
         android:gravity="center"
@@ -91,30 +91,6 @@
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <TextView
-        android:id="@+id/spemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Email"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="56dp" />
-
-    <TextView
-        android:id="@+id/sppass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Password"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/spemail"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

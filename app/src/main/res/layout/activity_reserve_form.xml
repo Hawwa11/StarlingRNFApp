@@ -47,8 +47,10 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/textbox"
             android:ems="10"
+            android:paddingLeft="10dp"
             android:inputType="number"
-            app:layout_constraintStart_toStartOf="@+id/reserve_pax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_pax" />
 
         <RadioButton
@@ -58,7 +60,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:onClick="rb1"
-            android:text="12pm"
+            android:text="12PM"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
@@ -69,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:onClick="rb2"
-            android:text="1pm"
+            android:text="1PM"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/rb3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -83,7 +85,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
             android:onClick="rb3"
-            android:text="2pm"
+            android:text="2PM"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
@@ -96,7 +98,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
             android:onClick="rb4"
-            android:text="6pm"
+            android:text="6PM"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb1" />
@@ -107,11 +109,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="rb5"
-            android:text="7pm"
+            android:text="7PM"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/rb6"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/rb4"
+            app:layout_constraintStart_toStartOf="@+id/rb2"
             app:layout_constraintTop_toBottomOf="@+id/rb2" />
 
         <RadioButton
@@ -121,7 +121,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="25dp"
             android:onClick="rb6"
-            android:text="8pm"
+            android:text="8PM"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb3" />

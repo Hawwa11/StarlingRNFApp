@@ -106,6 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="** Check the required personal details before confirming"
+        android:textAlignment="center"
         android:textColor="@color/red"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

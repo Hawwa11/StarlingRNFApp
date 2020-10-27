@@ -84,7 +84,7 @@ Button back;
                 preserve.put("date", date);
                 preserve.put("no_pax", pax);
                 documenentReference.set(preserve);
-                Toast.makeText(ConfirmDetails.this, "Parking Reserved Succesfully.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ConfirmDetails.this, "Reservation Booked Succesfully.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
 

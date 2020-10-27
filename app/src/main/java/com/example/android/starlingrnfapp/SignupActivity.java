@@ -66,6 +66,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String Email = email.getText().toString().trim();
                 final String Password = password.getText().toString().trim();
+                final String CPassword = cpassword.getText().toString().trim();
                 final String Name = name.getText().toString().trim();
                 final String Phoneno=phone.getText().toString().trim();;
 
@@ -85,10 +86,18 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
 
-//
+                if(TextUtils.isEmpty(CPassword)){
+                    cpassword.setError("Confirm password is required.");
+                    return;
+                }
+
+                if(Password.equals(CPassword) == false){
+                    cpassword.setError("Confirm password must be same as Password.");
+                    return;
+                }
 
                 if(agree.isChecked()==false){
-                    password.setError("Please agree to term and conditions.");
+                    agree.setError("Please agree to term and conditions.");
                     return;
                 }
 
