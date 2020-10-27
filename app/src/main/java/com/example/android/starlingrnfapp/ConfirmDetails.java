@@ -23,6 +23,7 @@ import java.util.Map;
 public class ConfirmDetails extends AppCompatActivity {
 Button confirm;
 EditText name, email, phone;
+Button back;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -33,12 +34,20 @@ EditText name, email, phone;
         setContentView(R.layout.activity_confirm_details);
 
         confirm = findViewById(R.id.btnconfirm);
+        back = findViewById(R.id.back2_reserveform);
         name = findViewById(R.id.cname);
         email = findViewById(R.id.cemail);
         phone = findViewById(R.id.cphno);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(), ReserveForm.class));
+            }
+        });
 
         Bundle bundle = getIntent().getExtras();
         final String date = bundle.getString("date");

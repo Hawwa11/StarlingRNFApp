@@ -8,13 +8,13 @@
 
     <EditText
         android:id="@+id/erphoneno"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
         android:hint="Enter Contact No."
         android:includeFontPadding="true"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,14 +22,14 @@
 
     <EditText
         android:id="@+id/eremail"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
         android:hint="Enter Email"
         android:includeFontPadding="true"
         android:inputType="textEmailAddress"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,13 +37,13 @@
 
     <EditText
         android:id="@+id/erpax"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
-        android:hint="Enter the no. of pax"
+        android:hint="Enter No. of pax"
         android:includeFontPadding="true"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,13 +51,13 @@
 
     <EditText
         android:id="@+id/erdate"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
-        android:hint="Enter Date(eg 31/9/2020)"
+        android:hint="Enter Date (eg: 31/9/2020)"
         android:includeFontPadding="true"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,9 +66,9 @@
 
     <EditText
         android:id="@+id/ername"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/textbox"
         android:hint="Enter Name"
         android:includeFontPadding="true"
@@ -76,18 +76,18 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editres" />
 
     <EditText
         android:id="@+id/ertime"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/textbox"
-        android:hint="Enter Time(eg: 1:00pm - 2:00pm)"
+        android:hint="Enter Time (eg: 1:00pm)"
         android:includeFontPadding="true"
         android:inputType="textPassword"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,21 +95,41 @@
 
     <Button
         android:id="@+id/btnersave"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="50dp"
+        android:background="@color/darkblue"
         android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnerback"
         app:layout_constraintTop_toBottomOf="@+id/erpax" />
 
     <Button
         android:id="@+id/btnerback"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/darkgray"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnersave"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erpax" />
+
+    <TextView
+        android:id="@+id/editres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="24dp"
-        android:text="Back"
+        android:layout_marginTop="20dp"
+        android:text="Edit Reservation"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/erpax" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

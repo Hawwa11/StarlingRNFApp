@@ -191,6 +191,7 @@
         android:background="@android:color/transparent"
         android:text="Already have an account? Sign in."
         android:textAllCaps="false"
+        android:textSize="18sp"
         android:textColor="@color/darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
