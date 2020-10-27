@@ -7,6 +7,7 @@
     <color name="gray">#F2F2F2</color>
     <color name="red">#C00000</color>
     <color name="blue">#2196F3</color>
-    <color name="light">#FCFCE8</color>
+    <color name="darkblue">#031147</color>
     <color name="black">#000000</color>
+    <color name="darkgray">#707070</color>
 </resources>
