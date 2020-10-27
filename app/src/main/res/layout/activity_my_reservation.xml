@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Name"
         android:textColor="#707070"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/myreservation" />
 
     <TextView
         android:id="@+id/rphone"
@@ -87,31 +87,52 @@
 
     <Button
         android:id="@+id/btnedit"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Edit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/darkblue"
         app:layout_constraintEnd_toStartOf="@+id/btndelete"
         app:layout_constraintStart_toEndOf="@+id/btnback"
         app:layout_constraintTop_toBottomOf="@+id/rpax" />
 
     <Button
         android:id="@+id/btnback"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="32dp"
         android:text="Back"
+        android:background="@color/darkgray"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rpax" />
 
     <Button
         android:id="@+id/btndelete"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
         android:text="Delete"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rpax" />
+
+    <TextView
+        android:id="@+id/myreservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="My Reservation"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

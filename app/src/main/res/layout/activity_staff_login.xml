@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StaffLogin">
+    tools:context=".StaffLogin"
+    android:background="@drawable/background">
 
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="289dp"
-        android:layout_height="216dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +73,7 @@
         android:id="@+id/tvswitchtocus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="Switch to customer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,12 +83,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Staff Protal"
+        android:text="Staff Portal"
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -95,23 +96,25 @@
         android:id="@+id/spemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Email"
-        android:textSize="22sp"
         android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="273dp" />
+        tools:layout_editor_absoluteX="56dp" />
 
     <TextView
         android:id="@+id/sppass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="Password"
         android:textColor="@color/black"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="375dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/spemail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="57dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

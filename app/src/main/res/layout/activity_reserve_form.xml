@@ -16,13 +16,17 @@
 
         <Button
             android:id="@+id/submit_button"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
-            android:text="Submit"
+            android:background="@color/darkblue"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/edit_pax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_pax" />
 
         <DatePicker
@@ -38,9 +42,10 @@
 
         <EditText
             android:id="@+id/edit_pax"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             app:layout_constraintStart_toStartOf="@+id/reserve_pax"
@@ -53,7 +58,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:onClick="rb1"
-            android:text="12pm - 1pm"
+            android:text="12pm"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
 
@@ -63,8 +69,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:onClick="rb2"
-            android:text="1pm - 2pm"
+            android:text="1pm"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/rb3"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/rb1"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
 
@@ -75,7 +83,8 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
             android:onClick="rb3"
-            android:text="2pm - 3pm"
+            android:text="2pm"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
 
@@ -87,7 +96,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
             android:onClick="rb4"
-            android:text="6pm - 7pm"
+            android:text="6pm"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb1" />
 
@@ -97,8 +107,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="rb5"
-            android:text="7pm - 8pm"
+            android:text="7pm"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/rb6"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/rb4"
             app:layout_constraintTop_toBottomOf="@+id/rb2" />
 
@@ -109,7 +121,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="25dp"
             android:onClick="rb6"
-            android:text="8pm - 9pm"
+            android:text="8pm"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb3" />
 
@@ -121,6 +134,8 @@
             android:layout_marginTop="16dp"
             android:text="Reservation Form"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="25sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,7 +144,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Numbe of pax"
+            android:text="Number of pax"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/rb4"
             app:layout_constraintTop_toBottomOf="@+id/rb4" />
 
@@ -137,8 +153,9 @@
             android:id="@+id/reserve_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="30dp"
             android:text="Date"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/reservationf"
             app:layout_constraintTop_toBottomOf="@+id/reservationf" />
 
@@ -147,8 +164,9 @@
             android:id="@+id/reserve_timeslot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:text="Timeslot (3pm - 6pm break)"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/reserve_date"
             app:layout_constraintTop_toBottomOf="@+id/datePicker1" />
 
