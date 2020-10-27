@@ -81,7 +81,7 @@
         android:id="@+id/conhp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Handphone Number"
+        android:text="Phone Number"
         android:textColor="@color/black"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="37dp"
@@ -89,9 +89,9 @@
 
     <TextView
         android:id="@+id/conreq"
-        android:layout_width="wrap_content"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:text="Check the required details before confirming"
+        android:text="Check the required personal details before confirming"
         android:textColor="@color/red"
         android:textSize="16sp"
         tools:ignore="MissingConstraints"
