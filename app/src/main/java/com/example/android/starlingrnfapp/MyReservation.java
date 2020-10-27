@@ -107,7 +107,7 @@ public class MyReservation extends AppCompatActivity {
                                 Log.w(TAG, "Error deleting document", e);
                             }
                         });
-
+                empty.setText("No Reservation Made Yet!");
 
             }
         });

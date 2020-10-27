@@ -54,12 +54,12 @@
         android:id="@+id/tvforgetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:text="Forgot your password?"
         android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/etpass" />
 
     <Button
         android:id="@+id/btnlogin"
@@ -69,25 +69,26 @@
         android:layout_marginTop="20dp"
         android:background="@color/darkblue"
         android:text="login"
-        android:textSize="20sp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etpass" />
+        app:layout_constraintTop_toBottomOf="@+id/tvforgetpass" />
 
     <TextView
         android:id="@+id/tvsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="New here? Sign up."
-        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:text="New here? Sign up!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvforgetpass" />
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
 
     <TextView
         android:id="@+id/tvswitch"

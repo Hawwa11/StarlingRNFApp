@@ -21,6 +21,9 @@
             android:icon="@drawable/ic_help"
             android:title="Help Center" />
         <item
+            android:id="@+id/nav_feedback"
+            android:title="FeedBack" />
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
             android:title="Logout" />
