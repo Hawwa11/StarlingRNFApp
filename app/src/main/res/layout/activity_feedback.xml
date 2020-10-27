@@ -13,7 +13,7 @@
     tools:context=".Feedback">
 
     <RatingBar
-        android:id="@+id/ratingBar3"
+        android:id="@+id/rtservice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@+id/services" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/rthygiene"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/hygiene" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/rtfood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -60,7 +60,7 @@
         android:layout_marginTop="20dp"
         android:text="Hygiene"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+        app:layout_constraintTop_toBottomOf="@+id/rtservice" />
 
     <TextView
         android:id="@+id/foodquality"
@@ -70,7 +70,7 @@
         android:layout_marginTop="20dp"
         android:text="Food Quality"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/rthygiene" />
 
     <TextView
         android:id="@+id/viewrating"
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/rtfood" />
 
     <Button
         android:id="@+id/submitfeedback"
