@@ -53,13 +53,14 @@
 
     <Button
         android:id="@+id/btnlogin2"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:background="#031147"
         android:text="login"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditReservation">
+
+    <EditText
+        android:id="@+id/erphoneno"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Contact No."
+        android:includeFontPadding="true"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eremail" />
+
+    <EditText
+        android:id="@+id/eremail"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Email"
+        android:includeFontPadding="true"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ername" />
+
+    <EditText
+        android:id="@+id/erpax"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter the no. of pax"
+        android:includeFontPadding="true"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ertime" />
+
+    <EditText
+        android:id="@+id/erdate"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Date(eg 31/9/2020)"
+        android:includeFontPadding="true"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erphoneno" />
+
+
+    <EditText
+        android:id="@+id/ername"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Name"
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ertime"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:hint="Enter Time(eg: 1:00pm - 2:00pm)"
+        android:includeFontPadding="true"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erdate" />
+
+    <Button
+        android:id="@+id/btnersave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erpax" />
+
+    <Button
+        android:id="@+id/btnerback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erpax" />
+</androidx.constraintlayout.widget.ConstraintLayout>

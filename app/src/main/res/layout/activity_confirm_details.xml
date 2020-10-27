@@ -11,101 +11,106 @@
         android:id="@+id/cname"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
-        android:background="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textbox"
         android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/conname" />
 
     <EditText
         android:id="@+id/cemail"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
-        android:background="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textbox"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cname" />
+        app:layout_constraintTop_toBottomOf="@+id/conemail" />
 
     <EditText
         android:id="@+id/cphno"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="68dp"
-        android:background="@android:color/white"
-
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textbox"
         android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cemail" />
+        app:layout_constraintTop_toBottomOf="@+id/conhp" />
 
     <Button
         android:id="@+id/btnconfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Confirm"
+        android:layout_marginTop="32dp"
         android:background="@color/blue"
+        android:text="Confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cphno" />
+        app:layout_constraintTop_toBottomOf="@+id/conreq" />
 
     <TextView
         android:id="@+id/conname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Name"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="93dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/condetails"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp" />
 
     <TextView
         android:id="@+id/conemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Email"
         android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cname"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="199dp" />
+        tools:layout_editor_absoluteX="37dp" />
 
     <TextView
         android:id="@+id/conhp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Handphone Number"
+        android:layout_marginTop="24dp"
+        android:text="Phone Number"
         android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cemail"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="314dp" />
+        tools:layout_editor_absoluteX="37dp" />
 
     <TextView
         android:id="@+id/conreq"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Check the required details before confirming"
+        android:layout_marginTop="32dp"
+        android:text="Check the required personal details before confirming"
         android:textColor="@color/red"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cphno"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/condetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Confirm Details"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="37dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
