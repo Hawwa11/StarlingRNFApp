@@ -24,7 +24,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class EditReservation extends AppCompatActivity {
@@ -64,7 +66,7 @@ FirebaseUser user;
                 pax.setText(value.getString("no_pax"));
                 phone.setText(value.getString("phone"));
                 time.setText(value.getString("time"));
-                date.setText(value.getString("date"));
+                date.setText(value.getString("rev_date"));
 
             }
         });
@@ -86,7 +88,7 @@ FirebaseUser user;
                 String Time=time.getText().toString().trim();;
                 String Date=date.getText().toString().trim();;
                 String Pax=pax.getText().toString().trim();;
-
+                final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
 
                 DocumentReference defref = fStore.collection("reservations").document(userID);
                 Map<String, Object> edited = new HashMap<>();
@@ -95,7 +97,8 @@ FirebaseUser user;
                 edited.put("email",Email);
                 edited.put("time",Time);
                 edited.put("phone",Phone);
-                edited.put("date",Date);
+                edited.put("rev_date",Date);
+                edited.put("edit_date",date);
                 defref.set(edited).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

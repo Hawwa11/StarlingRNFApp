@@ -76,13 +76,11 @@
         android:id="@+id/viewrating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="60dp"
-        android:text="View Reviews/Ratings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Review"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitfeedback" />
+        app:layout_constraintTop_toBottomOf="@+id/rtfood" />
 
     <TextView
         android:id="@+id/feedback"
@@ -103,11 +101,14 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Write your review here..."
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:background="@drawable/textbox"
+        android:gravity="start|top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rtfood" />
+        app:layout_constraintTop_toBottomOf="@+id/viewrating" />
 
     <Button
         android:id="@+id/submitfeedback"

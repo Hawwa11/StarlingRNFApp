@@ -17,7 +17,10 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class ConfirmDetails extends AppCompatActivity {
@@ -50,10 +53,10 @@ Button back;
         });
 
         Bundle bundle = getIntent().getExtras();
-        final String date = bundle.getString("date");
+        final String Date = bundle.getString("date");
         final String pax = bundle.getString("nopax");
         final String time = bundle.getString("time");
-
+        final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
         userID = fAuth.getCurrentUser().getUid();
 
         DocumentReference docref1 = fStore.collection("users").document(userID);
@@ -81,8 +84,9 @@ Button back;
                 preserve.put("phone", Phoneno);
                 preserve.put("email", Email);
                 preserve.put("time", time);
-                preserve.put("date", date);
+                preserve.put("rev_date", Date);
                 preserve.put("no_pax", pax);
+                preserve.put("date", date);
                 documenentReference.set(preserve);
                 Toast.makeText(ConfirmDetails.this, "Reservation Booked Succesfully.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

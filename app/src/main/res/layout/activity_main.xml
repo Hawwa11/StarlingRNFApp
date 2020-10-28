@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start"
+
     tools:context=".MainActivity">
 
     <ScrollView
@@ -104,53 +104,28 @@
             app:layout_constraintTop_toBottomOf="@+id/home5" />
 
         <TextView
-            android:id="@+id/home8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:text="Wi-Fi, Air Conditioning"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home7" />
-
-        <TextView
-            android:id="@+id/home7"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:text="Facilities"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:text="Menu"
             android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/home6" />
 
-        <TextView
-            android:id="@+id/home9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:text="Payment Options"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home8" />
-
-        <TextView
-            android:id="@+id/home10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="100dp"
-            android:text="Credit Card, Debit Card, Cash"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home9"
-            app:layout_constraintVertical_bias="0.933" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

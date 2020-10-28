@@ -26,7 +26,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import android.os.Bundle;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class SignupActivity extends AppCompatActivity {
@@ -69,6 +72,7 @@ public class SignupActivity extends AppCompatActivity {
                 final String CPassword = cpassword.getText().toString().trim();
                 final String Name = name.getText().toString().trim();
                 final String Phoneno=phone.getText().toString().trim();;
+                final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
 
                 if(TextUtils.isEmpty(Email)){
                     email.setError("Email is required.");
@@ -114,6 +118,7 @@ public class SignupActivity extends AppCompatActivity {
                             user.put("email",Email);
                             user.put("phone",Phoneno);
                             user.put("password",Password);
+                            user.put("date",date);
                             documenentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
