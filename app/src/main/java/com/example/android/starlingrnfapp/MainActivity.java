@@ -53,7 +53,8 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 break;
             case R.id.nav_settings:
                 startActivity(new Intent(getApplicationContext(),EditProfile.class));
-            case R.id.nav_feedback:
+                break;
+                case R.id.nav_feedback:
                 startActivity(new Intent(getApplicationContext(),Feedback.class));
                 break;
         case R.id.nav_logout:
