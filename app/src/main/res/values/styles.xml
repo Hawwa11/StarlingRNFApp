@@ -5,9 +5,28 @@
 <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
 <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
 <!--        <item name="colorAccent">@color/colorAccent</item>-->
-        <item name="colorPrimary">@color/darkblue</item>
+        <item name="colorPrimary">#4754A3</item>
         <item name="colorPrimaryDark">#1C1C1C</item>
-        <item name="colorAccent">@color/darkblue</item>
+        <item name="colorAccent">#4754A3</item>
+    </style>
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="textColor">#323030</item>
+        <item name="metaTextColor">#707070</item>
+        <item name="bgColor">#ffffff</item>
+        <item name="rbColor">#B5B3B3</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="textColor">#ffffff</item>
+        <item name="metaTextColor">#aeaeae</item>
+        <item name="bgColor">#000000</item>
+        <item name="rbColor">#ffffff</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">?attr/rbColor</item>
+        <item name="colorControlActivated">#4754A3</item>
     </style>
 
 </resources>

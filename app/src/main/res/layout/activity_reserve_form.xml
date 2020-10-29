@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
+    android:background="?attr/bgColor"
     android:layout_height="fill_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,6 +36,7 @@
             android:layout_height="421dp"
             android:layout_marginTop="30dp"
             android:datePickerMode="calendar"
+            android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +62,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:onClick="rb1"
+            android:textColor="?attr/metaTextColor"
+            android:buttonTint="#4754A3"
             android:text="12PM"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +77,8 @@
             android:onClick="rb2"
             android:text="1PM"
             android:textSize="18sp"
+            android:buttonTint="#4754A3"
+            android:textColor="?attr/metaTextColor"
             app:layout_constraintEnd_toStartOf="@+id/rb3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/rb1"
@@ -87,6 +93,8 @@
             android:onClick="rb3"
             android:text="2PM"
             android:textSize="18sp"
+            android:textColor="?attr/metaTextColor"
+            android:buttonTint="#4754A3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
 
@@ -100,6 +108,8 @@
             android:onClick="rb4"
             android:text="6PM"
             android:textSize="18sp"
+            android:textColor="?attr/metaTextColor"
+            android:buttonTint="#4754A3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb1" />
 
@@ -111,6 +121,8 @@
             android:onClick="rb5"
             android:text="7PM"
             android:textSize="18sp"
+            android:textColor="?attr/metaTextColor"
+            android:buttonTint="#4754A3"
             app:layout_constraintStart_toStartOf="@+id/rb2"
             app:layout_constraintTop_toBottomOf="@+id/rb2" />
 
@@ -123,6 +135,8 @@
             android:onClick="rb6"
             android:text="8PM"
             android:textSize="18sp"
+            android:textColor="?attr/metaTextColor"
+            android:buttonTint="#4754A3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb3" />
 
@@ -133,6 +147,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
             android:text="Reservation Form"
+            android:textColor="?attr/textColor"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -145,6 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Number of pax"
+            android:textColor="?attr/textColor"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/rb4"
             app:layout_constraintTop_toBottomOf="@+id/rb4" />
@@ -155,6 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Date"
+            android:textColor="?attr/textColor"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/reservationf"
             app:layout_constraintTop_toBottomOf="@+id/reservationf" />
@@ -165,7 +182,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Timeslot (3pm - 6pm break)"
+            android:textColor="?attr/textColor"
+            android:text="Timeslot (3PM - 6PM break)"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/reserve_date"
             app:layout_constraintTop_toBottomOf="@+id/datePicker1" />

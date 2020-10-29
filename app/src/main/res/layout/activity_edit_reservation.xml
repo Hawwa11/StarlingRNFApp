@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/bgColor"
     tools:context=".EditReservation">
 
     <EditText
@@ -128,6 +129,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="Edit Reservation"
+        android:textColor="?attr/textColor"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

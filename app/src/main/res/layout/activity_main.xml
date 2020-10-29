@@ -6,6 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/bgColor"
     android:fitsSystemWindows="true"
 
     tools:context=".MainActivity">
@@ -51,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="DINE IN | DELIVERY"
+            android:textColor="?attr/metaTextColor"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +65,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
             android:text="About Us"
-            android:textColor="@color/black"
+            android:textColor="?attr/textColor"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,10 +75,11 @@
             android:id="@+id/home4"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
             android:text="@string/description"
+            android:textColor="?attr/metaTextColor"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/home3" />
 
@@ -89,7 +92,7 @@
             android:text="Atmospheres"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="@color/black"
+            android:textColor="?attr/textColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/home4" />
 
@@ -100,6 +103,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
             android:text="Casual Dining, Family Friendly"
+            android:textColor="?attr/metaTextColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/home5" />
 
@@ -110,7 +114,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
             android:text="Menu"
-            android:textColor="@color/black"
+            android:textColor="?attr/textColor"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"

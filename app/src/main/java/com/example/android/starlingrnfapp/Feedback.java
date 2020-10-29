@@ -2,9 +2,11 @@ package com.example.android.starlingrnfapp;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +36,11 @@ String userID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            setTheme(R.style.DarkTheme);
+        } else {
+            setTheme(R.style.LightTheme);
+        }
         setContentView(R.layout.activity_feedback);
 
         service = findViewById(R.id.rtservice);
@@ -50,19 +57,23 @@ String userID;
         documenentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-               String RService = value.getString("rate_service");
-               String Rhygiene = value.getString("rate_hygiene");
-               String RFood = value.getString("rate_food_quality");
                 review.setText(value.getString("review"));
+                if( review.getText().toString().isEmpty() != true) {
 
 
-                float rates= Float.parseFloat(RService);
-                float rateh= Float.parseFloat(Rhygiene);
-                float ratef= Float.parseFloat(RFood);
+                    String RService = value.getString("rate_service");
+                    String Rhygiene = value.getString("rate_hygiene");
+                    String RFood = value.getString("rate_food_quality");
 
-                service.setRating(rates);
-                food.setRating(rateh);
-                hygiene.setRating(ratef);
+
+                    float rates = Float.parseFloat(RService);
+                    float rateh = Float.parseFloat(Rhygiene);
+                    float ratef = Float.parseFloat(RFood);
+
+                    service.setRating(rates);
+                    food.setRating(rateh);
+                    hygiene.setRating(ratef);
+                }
             }
         });
         submit.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +83,10 @@ String userID;
                 String Service = String.valueOf(service.getRating());
                 String Hygiene = String.valueOf(hygiene.getRating());
                 String Food = String.valueOf(food.getRating());
-
+                if(TextUtils.isEmpty(Review)){
+                    review.setError("No review entered");
+                    return;
+                }
                 final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
 
                 DocumentReference documenentReference = fstore.collection("feedback").document(userID);

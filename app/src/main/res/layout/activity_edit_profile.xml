@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/bgColor"
     tools:context=".EditProfile">
 
     <TextView
         android:id="@+id/editprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
-        android:text="Edit Profile"
+        android:text="Profile"
+        android:textColor="?attr/textColor"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/epname"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/textbox"
         android:ems="10"
         android:hint="Name"
@@ -37,7 +39,7 @@
         android:id="@+id/epemail"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/textbox"
         android:ems="10"
         android:hint="Email"
@@ -51,7 +53,7 @@
         android:id="@+id/epphoneno"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/textbox"
         android:ems="10"
         android:hint="Phone Number"
@@ -65,7 +67,6 @@
         android:id="@+id/btnpsave"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:background="@color/darkblue"
         android:text="Save"
         android:textColor="@color/white"
@@ -80,7 +81,6 @@
         android:id="@+id/btnpback"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:background="@color/darkgray"
         android:text="Back"
         android:textColor="@color/white"
@@ -91,12 +91,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/epphoneno" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/starling_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:background="?attr/bgColor"
+    android:layout_height="match_parent"
+    tools:context=".HelpCenter">
 
 
     <EditText
@@ -38,6 +40,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="Helpdesk"
+        android:textColor="?attr/textColor"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="FAQs"
+        android:textColor="?attr/textColor"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +69,7 @@
         android:text="Enquiry Form"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="?attr/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnguide" />
 
@@ -74,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="TextView"
+        android:textColor="?attr/textColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

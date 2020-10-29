@@ -3,6 +3,7 @@ package com.example.android.starlingrnfapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -21,6 +22,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            setTheme(R.style.DarkTheme);
+        } else {
+            setTheme(R.style.LightTheme);
+        }
         setContentView(R.layout.activity_main);
 
 
@@ -52,7 +58,7 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 startActivity(new Intent(getApplicationContext(),HelpCenter.class));
                 break;
             case R.id.nav_settings:
-                startActivity(new Intent(getApplicationContext(),EditProfile.class));
+                startActivity(new Intent(getApplicationContext(),Settings.class));
                 break;
                 case R.id.nav_feedback:
                 startActivity(new Intent(getApplicationContext(),Feedback.class));

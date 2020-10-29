@@ -4,19 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
+    android:background="?attr/bgColor"
     android:layout_height="fill_parent">
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    tools:context=".Feedback"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Feedback">
+   >
 
     <RatingBar
         android:id="@+id/rtservice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:theme="@style/RatingBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:theme="@style/RatingBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/RatingBar"
         app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodquality" />
@@ -48,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="10dp"
+        android:textColor="?attr/textColor"
         android:text="Services"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feedback" />
@@ -59,6 +65,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="Hygiene"
+        android:textColor="?attr/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rtservice" />
 
@@ -69,6 +76,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="Food Quality"
+        android:textColor="?attr/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rthygiene" />
 
@@ -79,6 +87,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="Review"
+        android:textColor="?attr/textColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rtfood" />
 
@@ -90,6 +99,7 @@
         android:layout_marginTop="20dp"
         android:text="Feedback"
         android:textSize="25sp"
+        android:textColor="?attr/textColor"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

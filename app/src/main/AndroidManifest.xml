@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Guide"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".Guide" />
         <activity android:name=".HelpCenter" />
         <activity android:name=".EditReservation" />
         <activity android:name=".EditProfile" />

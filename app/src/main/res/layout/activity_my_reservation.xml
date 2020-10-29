@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="?attr/bgColor"
     android:layout_height="match_parent"
     tools:context=".MyReservation">
 
@@ -13,7 +14,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:text="Name"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myreservation" />
@@ -24,7 +25,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:text="Phone"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/rname"
         app:layout_constraintTop_toBottomOf="@+id/rname" />
@@ -36,7 +37,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:text="Time"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/rdate"
         app:layout_constraintTop_toBottomOf="@+id/rdate" />
@@ -47,7 +48,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:text="Date"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/remail"
         app:layout_constraintTop_toBottomOf="@+id/remail" />
@@ -58,7 +59,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:text="Pax"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/rtime"
         app:layout_constraintTop_toBottomOf="@+id/rtime" />
@@ -69,6 +70,7 @@
         android:layout_height="wrap_content"
         android:text="No Reservation Made Yet!"
         android:textSize="20sp"
+        android:textColor="?attr/metaTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +82,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:text="Email"
-        android:textColor="#707070"
+        android:textColor="?attr/metaTextColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/rphone"
         app:layout_constraintTop_toBottomOf="@+id/rphone" />
@@ -132,6 +134,7 @@
         android:layout_marginTop="20dp"
         android:text="My Reservation"
         android:textSize="25sp"
+        android:textColor="?attr/textColor"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

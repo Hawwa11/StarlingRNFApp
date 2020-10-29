@@ -5,6 +5,7 @@
     android:id="@+id/confirmdetails"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/bgColor"
     tools:context=".ConfirmDetails">
 
     <EditText
@@ -68,7 +69,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:text="Name"
-        android:textColor="@color/black"
+        android:textColor="?attr/textColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/condetails"
@@ -81,7 +82,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:text="Email"
-        android:textColor="@color/black"
+        android:textColor="?attr/textColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cname"
@@ -94,7 +95,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:text="Phone Number"
-        android:textColor="@color/black"
+        android:textColor="?attr/textColor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cemail"
@@ -118,14 +119,15 @@
         android:id="@+id/condetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
         android:text="Confirm Details"
-        android:textColor="@color/black"
+        android:textColor="?attr/textColor"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/back2_reserveform"
