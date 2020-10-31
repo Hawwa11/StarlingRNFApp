@@ -63,7 +63,7 @@
             android:layout_marginTop="30dp"
             android:onClick="rb1"
             android:textColor="?attr/metaTextColor"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             android:text="12PM"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,7 @@
             android:onClick="rb2"
             android:text="1PM"
             android:textSize="18sp"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             android:textColor="?attr/metaTextColor"
             app:layout_constraintEnd_toStartOf="@+id/rb3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -94,7 +94,7 @@
             android:text="2PM"
             android:textSize="18sp"
             android:textColor="?attr/metaTextColor"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
 
@@ -109,7 +109,7 @@
             android:text="6PM"
             android:textSize="18sp"
             android:textColor="?attr/metaTextColor"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb1" />
 
@@ -122,7 +122,7 @@
             android:text="7PM"
             android:textSize="18sp"
             android:textColor="?attr/metaTextColor"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             app:layout_constraintStart_toStartOf="@+id/rb2"
             app:layout_constraintTop_toBottomOf="@+id/rb2" />
 
@@ -136,7 +136,7 @@
             android:text="8PM"
             android:textSize="18sp"
             android:textColor="?attr/metaTextColor"
-            android:buttonTint="#4754A3"
+            android:buttonTint="#080D2B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rb3" />
 

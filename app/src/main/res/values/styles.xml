@@ -7,7 +7,7 @@
 <!--        <item name="colorAccent">@color/colorAccent</item>-->
         <item name="colorPrimary">#080D2B</item>
         <item name="colorPrimaryDark">#1C1C1C</item>
-        <item name="colorAccent">#4754A3</item>
+        <item name="colorAccent">#080D2B</item>
     </style>
 
     <style name="LightTheme" parent="AppTheme">
@@ -26,7 +26,7 @@
 
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="colorControlNormal">?attr/rbColor</item>
-        <item name="colorControlActivated">#4754A3</item>
+        <item name="colorControlActivated">#080D2B</item>
     </style>
 
 </resources>
