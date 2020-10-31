@@ -11,13 +11,14 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class ReserveForm extends AppCompatActivity {
 DatePicker datePicker;
 Button submit;
 EditText nopax;
 String time;
-RadioButton rb1, rb2, rb3, rb4, rb5, rb6;
+RadioGroup rg1, rg2, rb3, rb4, rb5, rb6;
 int selectedYear , selectedMonth, selectedDay;
 String date;
 
@@ -35,6 +36,9 @@ public static final String TAG = "ReserverForm";
          datePicker = findViewById(R.id.datePicker1);
          submit = findViewById(R.id.submit_button);
          nopax = findViewById(R.id.edit_pax);
+        rg1 = findViewById(R.id.rg1);
+        rg2 = findViewById(R.id.rg2);
+
 
         Bundle bundle = getIntent().getExtras();
 
@@ -65,39 +69,16 @@ public static final String TAG = "ReserverForm";
                 startActivity(intent);
             }
         });
-    }
-
-
-    public void rb1(View view) {
-        time = "12PM";
-
-    }
-    public void rb2(View view) {
-        time = "1PM";
-
-    }
-    public void rb3(View view) {
-        time = "2PM";
-
-    }
-    public void rb4(View view) {
-        time = "6PM";
-
-    }
-    public void rb5(View view) {
-        time = "7PM";
-
-    }
-    public void rb6(View view) {
-        time = "8PM";
 
     }
 
     public void handleCombinedClick(View view) {
-// Manually set the check in the newly clicked radio button:
+
+        rg1.clearCheck();
+        rg2.clearCheck();
+
         ((RadioButton) view).setChecked(true);
 
-// Perform any action desired for the new selection:
         switch (view.getId()) {
             case R.id.rb1:
                 time = "12PM";
@@ -110,7 +91,7 @@ public static final String TAG = "ReserverForm";
             case R.id.rb3:
                 time = "2PM";
                 break;
-                
+
             case R.id.rb4:
                 time = "6PM";
                 break;
@@ -124,5 +105,33 @@ public static final String TAG = "ReserverForm";
                 break;
         }
     }
+
+//
+//    public void rb1(View view) {
+//        time = "12PM";
+//
+//    }
+//    public void rb2(View view) {
+//        time = "1PM";
+//
+//    }
+//    public void rb3(View view) {
+//        time = "2PM";
+//
+//    }
+//    public void rb4(View view) {
+//        time = "6PM";
+//
+//    }
+//    public void rb5(View view) {
+//        time = "7PM";
+//
+//    }
+//    public void rb6(View view) {
+//        time = "8PM";
+//
+//    }
+
+
 
 }
