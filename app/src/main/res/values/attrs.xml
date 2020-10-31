@@ -4,5 +4,5 @@
     <attr name="textColor" format="color"/>
     <attr name="metaTextColor" format="color"/>
     <attr name="rbColor" format="color"/>
-
+    <attr name="radiobutton" format="color"/>
 </resources>

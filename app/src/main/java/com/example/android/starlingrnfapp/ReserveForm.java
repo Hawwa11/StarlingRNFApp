@@ -93,6 +93,36 @@ public static final String TAG = "ReserverForm";
 
     }
 
+    public void handleCombinedClick(View view) {
+// Manually set the check in the newly clicked radio button:
+        ((RadioButton) view).setChecked(true);
 
+// Perform any action desired for the new selection:
+        switch (view.getId()) {
+            case R.id.rb1:
+                time = "12PM";
+                break;
+
+            case R.id.rb2:
+                time = "1PM";
+                break;
+
+            case R.id.rb3:
+                time = "2PM";
+                break;
+                
+            case R.id.rb4:
+                time = "6PM";
+                break;
+
+            case R.id.rb5:
+                time = "7PM";
+                break;
+
+            case R.id.rb6:
+                time = "8PM";
+                break;
+        }
+    }
 
 }
