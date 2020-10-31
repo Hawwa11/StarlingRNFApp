@@ -110,7 +110,7 @@ public static final String TAG = "ReserverForm";
             case R.id.rb3:
                 time = "2PM";
                 break;
-                
+
             case R.id.rb4:
                 time = "6PM";
                 break;
