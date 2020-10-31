@@ -55,91 +55,104 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reserve_pax" />
 
-
-        <RadioButton
-            android:id="@+id/rb1"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:onClick="rb1"
-            android:textColor="?attr/metaTextColor"
-            android:buttonTint="?attr/radiobutton"
-            android:text="12PM"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
-
-        <RadioButton
-            android:id="@+id/rb2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:onClick="rb2"
-            android:text="1PM"
-            android:textSize="18sp"
-            android:buttonTint="#080D2B"
-            android:textColor="?attr/metaTextColor"
-            app:layout_constraintEnd_toStartOf="@+id/rb3"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/rb1"
-            app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
-
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="25dp"
-            android:onClick="rb3"
-            android:text="2PM"
-            android:textSize="18sp"
-            android:textColor="?attr/metaTextColor"
-            android:buttonTint="#080D2B"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot" />
-
-
-        <RadioButton
-            android:id="@+id/rb4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="20dp"
-            android:onClick="handleCombinedClick"
-            android:text="6PM"
-            android:textSize="18sp"
-            android:textColor="?attr/metaTextColor"
-            android:buttonTint="#080D2B"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rb1" />
+            app:layout_constraintTop_toBottomOf="@+id/reserve_timeslot">
 
-        <RadioButton
-            android:id="@+id/rb5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:onClick="handleCombinedClick"
-            android:text="7PM"
-            android:textSize="18sp"
-            android:textColor="?attr/metaTextColor"
-            android:buttonTint="#080D2B"
-            app:layout_constraintStart_toStartOf="@+id/rb2"
-            app:layout_constraintTop_toBottomOf="@+id/rb2" />
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:buttonTint="?attr/radiobutton"
+                android:onClick="handleCombinedClick"
+                android:text="12PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
 
-        <RadioButton
-            android:id="@+id/rb6"
-            android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:buttonTint="#080D2B"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:onClick="handleCombinedClick"
+                android:text="1PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="#080D2B"
+                android:onClick="handleCombinedClick"
+                android:text="2PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="25dp"
-            android:onClick="handleCombinedClick"
-            android:text="8PM"
-            android:textSize="18sp"
-            android:textColor="?attr/metaTextColor"
-            android:buttonTint="#080D2B"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rb3" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg1">
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:buttonTint="#080D2B"
+                android:onClick="handleCombinedClick"
+                android:text="6PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="30dp"
+                android:buttonTint="#080D2B"
+                android:onClick="handleCombinedClick"
+                android:text="7PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="#080D2B"
+                android:onClick="handleCombinedClick"
+                android:text="8PM"
+                android:textColor="?attr/metaTextColor"
+                android:textSize="18sp" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/reservationf"
@@ -163,8 +176,8 @@
             android:text="Number of pax"
             android:textColor="?attr/textColor"
             android:textSize="22sp"
-            app:layout_constraintStart_toStartOf="@+id/rb4"
-            app:layout_constraintTop_toBottomOf="@+id/rb4" />
+            app:layout_constraintStart_toStartOf="@+id/reserve_timeslot"
+            app:layout_constraintTop_toBottomOf="@+id/rg2" />
 
         <TextView
             android:id="@+id/reserve_date"
