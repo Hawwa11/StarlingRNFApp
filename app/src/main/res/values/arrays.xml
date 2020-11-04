@@ -9,4 +9,14 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <string-array name="domains">
+        <item>gmail.com</item>
+        <item>yahoo.com</item>
+        <item>tiki.vn</item>
+        <item>hotmail.com</item>
+        <item>co.jp</item>
+        <item>yopmail.com</item>
+        <item>starling.com</item>
+    </string-array>
 </resources>

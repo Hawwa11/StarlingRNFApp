@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conname" />
 
-    <EditText
+    <vn.tiki.widgets.AutoCompleteEmailEditText
         android:id="@+id/cemail"
         android:layout_width="320dp"
         android:layout_height="50dp"
@@ -33,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conemail" />
+        app:layout_constraintTop_toBottomOf="@+id/conemail"
+        app:domains="@array/domains"/>
 
     <EditText
         android:id="@+id/cphno"

@@ -34,6 +34,7 @@ public class MyReservation extends AppCompatActivity {
     String userID;
     Button edit, back, delete;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,6 @@ public class MyReservation extends AppCompatActivity {
 
 
 
-
         DocumentReference documenentReference = fStore.collection("reservations").document(userID);
         documenentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -75,7 +75,7 @@ public class MyReservation extends AppCompatActivity {
                 paxno.setText(value.getString("no_pax"));
                 phone.setText(value.getString("phone"));
                 timeslot.setText(value.getString("time"));
-                date.setText(value.getString("date"));
+                date.setText(value.getString("rev_date"));
                 if( name.getText().toString().isEmpty() != true) {
                     empty.setText(" ");
                 }

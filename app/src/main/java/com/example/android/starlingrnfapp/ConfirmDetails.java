@@ -12,9 +12,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
@@ -23,6 +25,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Random;
 
 public class ConfirmDetails extends AppCompatActivity {
 Button confirm;
@@ -31,6 +34,9 @@ Button back;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    String resID;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +81,6 @@ Button back;
             }
         });
 
-
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,11 +99,38 @@ Button back;
                 preserve.put("no_pax", pax);
                 preserve.put("date", date);
                 documenentReference.set(preserve);
+
+                resID = "reservation" + getRandomString(10);
+                DocumentReference dr = fStore.collection("reservations").document(userID).collection("history").document(resID);
+                Map<String, Object> save = new HashMap<>();
+                save.put("ID", resID);
+                save.put("name", Name);
+                save.put("phone", Phoneno);
+                save.put("email", Email);
+                save.put("time", time);
+                save.put("rev_date", Date);
+                save.put("no_pax", pax);
+                save.put("date", date);
+                dr.set(save);
                 Toast.makeText(ConfirmDetails.this, "Reservation Booked Succesfully.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
 
             }
         });
+
+
+
+    }
+
+    public static final String ALLOWED_CHARACTERS ="0123456789qwertyuiopasdfghjklzxcvbnm";
+
+    public static String getRandomString(final int sizeOfRandomString)
+    {
+        final Random random=new Random();
+        final StringBuilder sb=new StringBuilder(sizeOfRandomString);
+        for(int i=0;i<sizeOfRandomString;++i)
+            sb.append(ALLOWED_CHARACTERS.charAt(random.nextInt(ALLOWED_CHARACTERS.length())));
+        return sb.toString();
     }
 }

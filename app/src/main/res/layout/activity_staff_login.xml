@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/starling_logo" />
 
 
-    <EditText
+    <vn.tiki.widgets.AutoCompleteEmailEditText
         android:id="@+id/etemail2"
         android:layout_width="320dp"
         android:layout_height="50dp"
@@ -28,6 +28,7 @@
         android:background="@drawable/textbox"
         android:gravity="center"
         android:hint="@string/prompt_email"
+        app:domains="@array/domains"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
