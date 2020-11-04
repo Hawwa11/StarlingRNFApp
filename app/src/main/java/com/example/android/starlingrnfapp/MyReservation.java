@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,6 +34,7 @@ public class MyReservation extends AppCompatActivity {
     FirebaseFirestore fStore;
     String userID;
     Button edit, back, delete;
+    String resID;
 
 
     @Override
@@ -76,6 +78,7 @@ public class MyReservation extends AppCompatActivity {
                 phone.setText(value.getString("phone"));
                 timeslot.setText(value.getString("time"));
                 date.setText(value.getString("rev_date"));
+                resID = value.getString("ID");
                 if( name.getText().toString().isEmpty() != true) {
                     empty.setText(" ");
                 }
@@ -94,30 +97,43 @@ public class MyReservation extends AppCompatActivity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),EditReservation.class));
+                if( name.getText().toString().isEmpty() != true) {
+                    startActivity(new Intent(getApplicationContext(), EditReservation.class));
+                }
+                else {
+                    Toast.makeText(MyReservation.this, "No reservations booked yet!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userID = fAuth.getCurrentUser().getUid();
-                fStore.collection("reservations").document(userID)
-                        .delete()
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Log.d(TAG, "DocumentSnapshot successfully deleted!");
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.w(TAG, "Error deleting document", e);
-                            }
-                        });
-                empty.setText("No Reservation Made Yet!");
+                if( name.getText().toString().isEmpty() != true) {
 
+
+                    userID = fAuth.getCurrentUser().getUid();
+                    fStore.collection("reservations").document(userID)
+                            .delete()
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG, "DocumentSnapshot successfully deleted!");
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.w(TAG, "Error deleting document", e);
+                                }
+                            });
+                    fStore.collection("reservations").document(userID).collection("history").document(resID)
+                            .delete();
+                    empty.setText("No Reservation Made Yet!");
+                }
+                else {
+                    Toast.makeText(MyReservation.this, "No reservations booked yet!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

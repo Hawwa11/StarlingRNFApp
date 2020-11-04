@@ -88,9 +88,10 @@ Button back;
                 String Email = email.getText().toString().trim();
                 String Phoneno = phone.getText().toString().trim();
                 userID = fAuth.getCurrentUser().getUid();
-
+                resID = "reservation" + getRandomString(10);
                 DocumentReference documenentReference = fStore.collection("reservations").document(userID);
                 Map<String, Object> preserve = new HashMap<>();
+                preserve.put("ID", resID);
                 preserve.put("name", Name);
                 preserve.put("phone", Phoneno);
                 preserve.put("email", Email);
@@ -100,7 +101,7 @@ Button back;
                 preserve.put("date", date);
                 documenentReference.set(preserve);
 
-                resID = "reservation" + getRandomString(10);
+
                 DocumentReference dr = fStore.collection("reservations").document(userID).collection("history").document(resID);
                 Map<String, Object> save = new HashMap<>();
                 save.put("ID", resID);
@@ -118,8 +119,6 @@ Button back;
 
             }
         });
-
-
 
     }
 

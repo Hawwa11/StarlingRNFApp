@@ -38,6 +38,7 @@ FirebaseFirestore fStore;
 FirebaseAuth fAuth;
 String userID;
 FirebaseUser user;
+    String resID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,7 @@ FirebaseUser user;
                 phone.setText(value.getString("phone"));
                 time.setText(value.getString("time"));
                 date.setText(value.getString("rev_date"));
+                resID = value.getString("ID");
 
             }
         });
@@ -98,6 +100,7 @@ FirebaseUser user;
 
                 DocumentReference defref = fStore.collection("reservations").document(userID);
                 Map<String, Object> edited = new HashMap<>();
+                edited.put("ID", resID);
                 edited.put("name",Name);
                 edited.put("no_pax",Pax);
                 edited.put("email",Email);
@@ -111,6 +114,17 @@ FirebaseUser user;
                         Log.d(TAG,"onSuccess: reservation details updated for for "+ userID);
                     }
                 });
+                DocumentReference dr = fStore.collection("reservations").document(userID).collection("history").document(resID);
+                Map<String, Object> save = new HashMap<>();
+                save.put("ID", resID);
+                save.put("name", Name);
+                save.put("phone", Phone);
+                save.put("email", Email);
+                save.put("time", Time);
+                save.put("rev_date", Date);
+                save.put("no_pax", Pax);
+                save.put("edit_date", date);
+                dr.set(save);
                 Toast.makeText(EditReservation.this, "Reservation Details Updated!", Toast.LENGTH_SHORT).show();
 //
             }
