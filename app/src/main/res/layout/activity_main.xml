@@ -8,8 +8,7 @@
     android:layout_height="match_parent"
     android:background="?attr/bgColor"
     android:fitsSystemWindows="true"
-
-    tools:context=".MainActivity">
+    >
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -137,10 +136,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginTop="16dp"
                 android:text="Cheesy Chicken "
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cheesychic" />
 
@@ -149,11 +147,9 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginEnd="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/cheesychic"
-                app:srcCompat="@drawable/fish_chips"
-                tools:layout_editor_absoluteY="550dp" />
+                app:srcCompat="@drawable/fish_chips" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

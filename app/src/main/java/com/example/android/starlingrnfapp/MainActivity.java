@@ -81,7 +81,5 @@ public void onBackPressed() {
         super.onBackPressed();
         }
         }
-      public void setting(View view) {
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-        }
+
 }

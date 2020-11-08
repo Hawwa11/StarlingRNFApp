@@ -12,13 +12,19 @@
             android:icon="@drawable/ic_reservation"
             android:title="Reservation Form" />
         <item
-            android:id="@+id/nav_myreservation"
-            android:title="My Reservation"
-            android:icon="@drawable/ic_home2"/>
-        <item
             android:id="@+id/nav_feedback"
             android:title="Feedback"
             android:icon="@drawable/ic_feedback"/>
+        <item
+            android:id="@+id/nav_myreservation"
+            android:title="My Reservation"
+            android:icon="@drawable/ic_home2"/>
+
+
+    </group>
+
+    <group
+        android:id="@+id/nav_bottom">
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
