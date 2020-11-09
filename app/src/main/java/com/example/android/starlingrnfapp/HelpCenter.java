@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,9 +18,15 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelpCenter extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
-TextView guide;
+    RecyclerView recyclerView;
+    List<FAQ> FAQlist;
+    TextView guide;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +53,26 @@ TextView guide;
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        recyclerView=findViewById(R.id.recyclerView);
+        initData();
+        setRecyclerView();
+    }
+
+    private void setRecyclerView() {
+        FAQ_Adapter FAQ_Adapter=new FAQ_Adapter(FAQlist);
+        recyclerView.setAdapter(FAQ_Adapter);
+        recyclerView.setHasFixedSize(true);
+    }
+
+    private void initData() {
+        FAQlist=new ArrayList<>();
+        FAQlist.add(new FAQ("How do I make a reservation?","You can make reservation by clicking on the reservation form in navigation drawer."));
+        FAQlist.add(new FAQ("Can I edit/cancel my reservation after confirming?","Yes. However if the cancellation is less than 48 hours before the reservation date, the cancellation will be forfeited. "));
+        FAQlist.add(new FAQ("Do I need to register with Starling App to make a reservation?","Yes, you have to be a member in order to make reservation in the app."));
+        FAQlist.add(new FAQ("How many reservations can I make?","Yes, but only one at a time."));
+        FAQlist.add(new FAQ("Do I need to provide my credit card info at any point?","No, you don't have to."));
+        
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
