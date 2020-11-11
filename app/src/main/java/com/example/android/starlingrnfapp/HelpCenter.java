@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class HelpCenter extends AppCompatActivity implements NavigationView.OnNa
     RecyclerView recyclerView;
     List<FAQ> FAQlist;
     TextView guide;
+    TextView enquiry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,15 @@ public class HelpCenter extends AppCompatActivity implements NavigationView.OnNa
             setTheme(R.style.LightTheme);
         }
         setContentView(R.layout.activity_helpcenter);
+
+        enquiry = findViewById(R.id.enquirybutton);
+        
+        enquiry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), HelpEnquiryForm.class));
+            }
+        });
 
         guide = findViewById(R.id.btnguide);
 
