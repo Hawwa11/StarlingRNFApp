@@ -19,15 +19,21 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HelpEnquiryForm extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-    private DrawerLayout drawer;
-    RecyclerView recyclerView;
+public class HelpEnquiryForm extends AppCompatActivity {
+
+
     private EditText mEditTextTo;
     private EditText mEditTextSubject;
     private EditText mEditTextMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            setTheme(R.style.DarkTheme);
+        } else {
+            setTheme(R.style.LightTheme);
+        }
         setContentView(R.layout.activity_helpenquiryform);
 
         mEditTextTo = findViewById(R.id.editto);
@@ -40,14 +46,9 @@ public class HelpEnquiryForm extends AppCompatActivity implements NavigationView
                 sendMail();
             }
         });
-        drawer = findViewById(R.id.drawer_layout);
 
-        NavigationView navigationView = findViewById(R.id.nav_view1);
-        navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+
     }
 
     private void sendMail() {
@@ -62,44 +63,7 @@ public class HelpEnquiryForm extends AppCompatActivity implements NavigationView
         intent.setType("message/rfc822");
         startActivity(Intent.createChooser(intent, "Choose an email client"));
     }
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.nav_main:
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                break;
-            case R.id.nav_reserveform:
-                startActivity(new Intent(getApplicationContext(),ReserveForm.class));
-                break;
-            case R.id.nav_myreservation:
-                startActivity(new Intent(getApplicationContext(),MyReservation.class));
-                break;
-            case R.id.nav_helpcenter:
-                startActivity(new Intent(getApplicationContext(),HelpCenter.class));
-                break;
-            case R.id.nav_settings:
-                startActivity(new Intent(getApplicationContext(),Settings.class));
-                break;
-            case R.id.nav_feedback:
-                startActivity(new Intent(getApplicationContext(),Feedback.class));
-                break;
-            case R.id.nav_logout:
-                Toast.makeText(this, "Logged Out.", Toast.LENGTH_SHORT).show();
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
-                break;
-        }
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
+
 
 }

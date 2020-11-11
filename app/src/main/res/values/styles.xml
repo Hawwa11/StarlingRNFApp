@@ -15,7 +15,6 @@
         <item name="metaTextColor">#707070</item>
         <item name="bgColor">#ffffff</item>
         <item name="rbColor">#B5B3B3</item>
-        <item name="radiobutton"></item>
     </style>
 
     <style name="DarkTheme" parent="AppTheme">

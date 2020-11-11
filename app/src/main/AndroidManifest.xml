@@ -17,6 +17,7 @@
         <activity android:name=".EditReservation" />
         <activity android:name=".EditProfile" />
         <activity android:name=".Feedback" />
+        <activity android:name=".HelpEnquiryForm" />
         <activity android:name=".MyReservation" />
         <activity android:name=".ConfirmDetails" />
         <activity android:name=".CreateStaff" />
