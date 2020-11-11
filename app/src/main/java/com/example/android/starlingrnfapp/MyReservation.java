@@ -37,7 +37,7 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
-    Button edit, back, delete;
+    Button edit, delete;
     String resID;
 
 
@@ -58,7 +58,6 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
         paxno =findViewById(R.id.rpax);
         timeslot=findViewById(R.id.rtime);
         phone=findViewById(R.id.rphone);
-        back = findViewById(R.id.btnback);
         edit=findViewById(R.id.btnedit);
         empty=findViewById(R.id.empty);
         date=findViewById(R.id.rdate);
@@ -91,12 +90,7 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
 
 
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            }
-        });
+
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
