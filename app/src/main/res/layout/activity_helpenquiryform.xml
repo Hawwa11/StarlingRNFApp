@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:background="?attr/bgColor"
+        android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".HelpEnquiryForm"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="39dp"
+            android:layout_height="26dp"
+            android:hint="staff1@starling.com"
+            android:text="To:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toStartOf="@+id/editto"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="7dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editto"
+            android:layout_width="332dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toStartOf="@+id/editsubject"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="53dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editsubject"
+            android:layout_width="331dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textEmailSubject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editto" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Message:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="94dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editmessage"
+            android:layout_width="411dp"
+            android:layout_height="84dp"
+            android:gravity="start|top"
+            android:lines="10"
+            app:layout_constraintBottom_toTopOf="@+id/buttonsend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/buttonsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/nav_view1"
+android:background="#FFFFFF"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:headerLayout="@layout/nav_header"
+app:menu="@menu/drawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
