@@ -78,7 +78,7 @@ public static final String TAG = "Settings";
             public void onClick(View view) {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
-                builder.setPositiveButton("Delete Account", new DialogInterface.OnClickListener()
+                builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener()
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which)
@@ -115,7 +115,7 @@ public static final String TAG = "Settings";
                         });
                     }
                 });
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener()
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener()
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which)
