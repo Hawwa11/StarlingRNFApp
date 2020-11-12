@@ -27,6 +27,7 @@
         <activity android:name=".ReserveForm" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ResetPassword" />
+        <activity android:name=".PDPA" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity" />
         <activity
