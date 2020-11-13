@@ -91,7 +91,7 @@ FirebaseUser user;
             public void onClick(View v) {
                 if(email.getText().toString().isEmpty() || name.getText().toString().isEmpty() || phone.getText().toString().isEmpty() ||
                         time.getText().toString().isEmpty() || date.getText().toString().isEmpty() || pax.getText().toString().isEmpty()) {
-                    Toast.makeText(EditReservation.this, "One or amny fields are empty.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditReservation.this, "One or many fields are empty.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 

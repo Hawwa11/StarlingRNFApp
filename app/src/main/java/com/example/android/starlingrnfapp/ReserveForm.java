@@ -73,11 +73,25 @@ public static final String TAG = "ReserverForm";
             @Override
             public void onClick(View view) {
                 final String pax = nopax.getText().toString().trim();
-                Intent intent = new Intent(ReserveForm.this, ConfirmDetails.class);
-                intent.putExtra("date", date);
-                intent.putExtra("nopax",pax);
-                intent.putExtra("time",time);
-                startActivity(intent);
+                if(TextUtils.isEmpty(pax)){
+                    nopax.setError("Confirm password is required.");
+                    return;
+                }
+                if(TextUtils.isEmpty(date)){
+                    Toast.makeText(ReserveForm.this, "No date selected!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(time)){
+                    Toast.makeText(ReserveForm.this, "No time selected!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else {
+                    Intent intent = new Intent(ReserveForm.this, ConfirmDetails.class);
+                    intent.putExtra("date", date);
+                    intent.putExtra("nopax", pax);
+                    intent.putExtra("time", time);
+                    startActivity(intent);
+                }
             }
         });
         drawer = findViewById(R.id.drawer_layout);

@@ -33,7 +33,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 public class MyReservation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     public static final String TAG = "MyReservation";
-    TextView name,phone,email ,paxno ,timeslot,empty,date;
+    TextView name, phone, email ,paxno ,timeslot, empty, date, tvrname, tvrphone, tvremail, tvrpaxno, tvrtimeslot, tvrdate;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -62,6 +62,12 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
         empty=findViewById(R.id.empty);
         date=findViewById(R.id.rdate);
         delete = findViewById(R.id.btndelete);
+        tvrname =findViewById(R.id.tvrname);
+        tvremail=findViewById(R.id.tvremail);
+        tvrpaxno =findViewById(R.id.tvrpax);
+        tvrtimeslot=findViewById(R.id.tvrtime);
+        tvrphone=findViewById(R.id.tvrphone);
+        tvrdate=findViewById(R.id.tvrdate);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -84,6 +90,14 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
                 resID = value.getString("ID");
                 if( name.getText().toString().isEmpty() != true) {
                     empty.setText(" ");
+                }
+                if( name.getText().toString().isEmpty() == true) {
+                    tvrname.setText(" ");
+                    tvremail.setText(" ");
+                    tvrpaxno.setText(" ");
+                    tvrtimeslot.setText(" ");
+                    tvrphone.setText(" ");
+                    tvrdate.setText(" ");
                 }
             }
         });

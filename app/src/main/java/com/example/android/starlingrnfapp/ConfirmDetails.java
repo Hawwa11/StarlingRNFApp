@@ -91,6 +91,10 @@ Button back;
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(email.getText().toString().isEmpty() || name.getText().toString().isEmpty() || phone.getText().toString().isEmpty()) {
+                    Toast.makeText(ConfirmDetails.this, "One or many fields are empty.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 String Name = name.getText().toString().trim();
                 String Email = email.getText().toString().trim();
                 String Phoneno = phone.getText().toString().trim();
