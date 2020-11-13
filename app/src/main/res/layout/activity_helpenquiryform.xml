@@ -26,6 +26,7 @@
             android:background="@color/darkblue"
             android:text="Send"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

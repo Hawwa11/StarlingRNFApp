@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recycler.add(new Menu(R.drawable.mornay,"Mushroom Mornay"));
         recycler.add(new Menu(R.drawable.bechamel,"Sausage Spinach Bechamel "));
         recycler.add(new Menu(R.drawable.macncheese,"Mac N Cheese"));
-        recycler.add(new Menu(R.drawable.cheesy_chic,"Chicken Chop"));
+        recycler.add(new Menu(R.drawable.chickenchop,"Chicken Chop"));
         recycler.add(new Menu(R.drawable.chickenconfit,"Chicken Confit"));
         recycler.add(new Menu(R.drawable.chickenmeatball,"Chicken Meatballs"));
 

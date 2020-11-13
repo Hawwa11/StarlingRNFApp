@@ -15,37 +15,37 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/starling_logo" />
 
+
     <Button
         android:id="@+id/btn_signup"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:background="@color/darkblue"
         android:text="Create Account"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cb_agree" />
-
+        app:layout_constraintTop_toBottomOf="@+id/pdpa" />
 
     <CheckBox
         android:id="@+id/cb_agree"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="I agree to terms and condition"
+        android:text="@string/pdpa"
         android:textColor="@color/darkgray"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etphoneno" />
@@ -182,18 +182,28 @@
         app:layout_constraintStart_toStartOf="@+id/tvemail"
         app:layout_constraintTop_toBottomOf="@+id/etpass" />
 
+    <TextView
+        android:id="@+id/pdpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Personal Data Protection Act (PDPA)"
+        android:textColor="@color/darkblue"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/cb_agree"
+        app:layout_constraintTop_toBottomOf="@+id/cb_agree" />
 
     <Button
         android:id="@+id/btn_gologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
         android:background="@android:color/transparent"
         android:text="Already have an account? Sign in."
         android:textAllCaps="false"
-        android:textSize="18sp"
         android:textColor="@color/darkblue"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

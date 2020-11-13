@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StarlingRNFApp</string>
+    <string name="app_name">Starling Restaurant</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email </string>
     <string name="prompt_password">Password</string>
@@ -20,6 +20,8 @@
     <string name="conhp">Handphone number</string>
     <string name="description">Starling Restaurant at SS2 is a small and cozy restaurant serving decent non-halal western meals at an affordable price. The restaurant offers a cozy and comfortable environment for casual dining with family and friends. If you’re looking for a venue to host a party, Retro Kitchen is an ideal place for small parties and functions.</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pdpa">By providing my personal data, I hereby declare that I have read, understood and agreed to the terms as provided via this link:</string>
+
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

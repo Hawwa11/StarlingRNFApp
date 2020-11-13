@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#5EA6CCD6"
+        android:background="#969BB3"
         android:gravity="bottom"
         android:orientation="vertical"
         android:padding="16dp"
@@ -18,8 +18,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="110dp"
-            android:layout_height="97dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             android:src="@drawable/starling_icon" />
 
         <TextView
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingLeft="10dp"
+            android:textStyle="bold"
             android:textColor="@color/darkblue"
             android:text="Welcome to Starling Restaurant"
             />

@@ -36,6 +36,7 @@ public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "Signup";
 
     EditText name,email,password,cpassword,phone;
+    TextView pdpa;
     CheckBox agree;
     Button signup;
     FirebaseAuth fAuth;
@@ -57,6 +58,7 @@ public class SignupActivity extends AppCompatActivity {
         agree =findViewById(R.id.cb_agree);
         signup = findViewById(R.id.btn_signup);
         goLogin=findViewById(R.id.btn_gologin);
+        pdpa=findViewById(R.id.pdpa);
 
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
@@ -143,6 +145,14 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
+
+        pdpa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(), PDPA.class));
             }
         });
     }
