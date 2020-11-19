@@ -153,6 +153,9 @@ public class EditProfile extends AppCompatActivity implements NavigationView.OnN
             case R.id.nav_helpcenter:
                 startActivity(new Intent(getApplicationContext(),HelpCenter.class));
                 break;
+            case R.id.nav_catering:
+                startActivity(new Intent(getApplicationContext(),Catering.class));
+                break;
             case R.id.nav_settings:
                 startActivity(new Intent(getApplicationContext(),Settings.class));
                 break;
