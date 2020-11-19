@@ -17,7 +17,8 @@
             android:icon="@drawable/ic_feedback"/>
         <item
             android:id="@+id/nav_catering"
-            android:title="Catering Form" />
+            android:title="Catering Form"
+            android:icon="@drawable/ic_catering"/>
         <item
             android:id="@+id/nav_myreservation"
             android:title="My Reservation"
