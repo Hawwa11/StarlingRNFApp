@@ -141,6 +141,8 @@ public class MyReservation extends AppCompatActivity implements NavigationView.O
                             });
                     fStore.collection("reservations").document(userID).collection("history").document(resID)
                             .delete();
+                    Toast.makeText(MyReservation.this, "No reservations made yet!", Toast.LENGTH_SHORT).show();
+
                     empty.setText("No Reservation Made Yet!");
                 }
                 else {

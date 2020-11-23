@@ -18,7 +18,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         logo=findViewById(R.id.logo);
 
-        Animation animation3= AnimationUtils.loadAnimation(this,R.anim.bounce);
+        Animation animation3= AnimationUtils.loadAnimation(this,R.anim.lefttoright);
         logo.startAnimation(animation3);
 
                 new Handler().postDelayed(new Runnable(){

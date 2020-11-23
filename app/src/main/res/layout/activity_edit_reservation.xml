@@ -9,9 +9,12 @@
     android:background="?attr/bgColor"
     android:fitsSystemWindows="true"
     >
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/bgColor"
@@ -21,7 +24,7 @@
         android:id="@+id/erphoneno"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter Contact No."
         android:includeFontPadding="true"
@@ -29,30 +32,29 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eremail"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <vn.tiki.widgets.AutoCompleteEmailEditText
         android:id="@+id/eremail"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter Email"
         android:includeFontPadding="true"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:textSize="20sp"
+        app:domains="@array/domains"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ername"
-        app:domains="@array/domains"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
         android:id="@+id/erpax"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter No. of pax"
         android:includeFontPadding="true"
@@ -60,13 +62,13 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ertime" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <EditText
         android:id="@+id/erdate"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter Date (eg: 2020-9-11)"
         android:includeFontPadding="true"
@@ -74,15 +76,14 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/erphoneno" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 
     <EditText
         android:id="@+id/ername"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter Name"
         android:includeFontPadding="true"
@@ -90,13 +91,13 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editres" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/ertime"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textbox"
         android:hint="Enter Time (eg: 1PM)"
         android:includeFontPadding="true"
@@ -104,7 +105,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/erdate" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
         android:id="@+id/btnersave"
@@ -112,10 +113,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/darkblue"
         android:text="Save"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnerback"
         app:layout_constraintTop_toBottomOf="@+id/erpax" />
@@ -125,14 +129,18 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/darkgray"
         android:text="Back"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnersave"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/erpax" />
+        app:layout_constraintTop_toBottomOf="@+id/erpax"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/editres"
@@ -146,7 +154,81 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editres" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ername" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eremail" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erphoneno" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Time"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erdate" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="No. of pax"
+        android:textColor="?attr/metaTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ertime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view1"
         android:background="#FFFFFF"

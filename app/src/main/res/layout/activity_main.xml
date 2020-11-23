@@ -20,11 +20,14 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             tools:context=".MainActivity">
 
+
             <ImageView
                 android:id="@+id/currypasta"
                 android:layout_width="match_parent"
                 android:layout_height="310dp"
                 android:alpha="0.3"
+                android:background="#000000"
+                android:padding="1.5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +42,7 @@
                 android:text="STARLING RESTAURANT"
                 android:textAlignment="center"
                 android:textColor="@color/darkblue"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="DINE IN | DELIVERY"
+                android:textSize="20sp"
                 android:textColor="?attr/metaTextColor"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -152,4 +156,5 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu" />
+
 </androidx.drawerlayout.widget.DrawerLayout>
