@@ -194,18 +194,18 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
             <FrameLayout
                 android:id="@+id/frame"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="50dp"
                 android:background="@drawable/textbox"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3">
+                app:layout_constraintTop_toBottomOf="@+id/textView17">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -743,6 +743,16 @@
 
                 </LinearLayout>
             </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="**Please email or call us to delete or to update any details once the catering form is submitted"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
