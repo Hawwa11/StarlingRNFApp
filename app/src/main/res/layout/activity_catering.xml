@@ -42,7 +42,7 @@
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="350dp"
-                android:layout_height="300dp"
+                android:layout_height="360dp"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:layout_marginStart="19dp"
@@ -54,14 +54,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView7">
 
                 <RelativeLayout
-                    android:layout_width="190dp"
+                    android:layout_width="179dp"
                     android:layout_height="match_parent">
 
 
                     <TextView
                         android:id="@+id/pasta"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="Pasta"
                         android:textColor="?attr/textColor"
                         android:textStyle="bold" />
@@ -71,7 +71,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/pasta"
-                        android:layout_marginTop="-285dp"
                         android:text="RM 6 per portion
                             \nBolognese - Chicken or Beef
                             \nCarbonara - Chicken or Beef
@@ -82,10 +81,10 @@
                     <TextView
                         android:id="@+id/sides"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_below="@+id/pastam"
-                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
                         android:text="Sides"
+                        android:layout_below="@+id/pastam"
+                        android:layout_marginTop="10dp"
                         android:textColor="?attr/textColor"
                         android:textStyle="bold" />
 
@@ -94,7 +93,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/sidesm"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:text="Drinks"
                         android:textColor="?attr/textColor"
 
@@ -104,8 +103,7 @@
                         android:id="@+id/sidesm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/sides"
-                        android:layout_marginTop="-162dp"
+                        android:layout_below="@+id/sides"
                         android:text="RM3.80 per portion
                         \nMashed potatoes  "
                         android:textColor="?attr/textColor" />
@@ -115,7 +113,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/drinks"
-                        android:layout_marginTop="-1dp"
                         android:text="RM3.00 per portion
                         \nIce lemon tea
                         \nSoft drinks"
@@ -127,7 +124,7 @@
 
                 <View
                     android:layout_width="1dp"
-                    android:layout_height="283dp"
+                    android:layout_height="340dp"
                     android:layout_marginLeft="5dp"
                     android:background="@color/black" />
 

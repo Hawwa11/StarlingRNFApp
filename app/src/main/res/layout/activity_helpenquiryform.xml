@@ -34,15 +34,14 @@
 
         <EditText
             android:id="@+id/editsubject"
-            android:layout_width="260dp"
-            android:layout_height="39dp"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="30dp"
             android:background="@drawable/textbox"
             android:inputType="textEmailSubject"
             android:paddingLeft="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/editto"
+            app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/editto" />
 
         <EditText
@@ -63,17 +62,16 @@
 
         <EditText
             android:id="@+id/editto"
-            android:layout_width="260dp"
-            android:layout_height="35dp"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="30dp"
             android:background="@drawable/textbox"
             android:enabled="false"
             android:inputType="textEmailAddress"
             android:paddingLeft="10dp"
             android:text="starlingrestaurant@gmail.com"
             android:textColor="@color/darkgray"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editsubject"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
