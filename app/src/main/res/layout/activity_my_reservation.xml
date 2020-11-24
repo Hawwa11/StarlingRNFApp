@@ -24,7 +24,7 @@
 
         <Button
             android:id="@+id/btnedit"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="30dp"
@@ -41,7 +41,7 @@
 
         <Button
             android:id="@+id/btndelete"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="30dp"
@@ -73,13 +73,13 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Name"
             android:textColor="?attr/metaTextColor"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvrname" />
 
@@ -100,7 +100,6 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Phone"
@@ -127,7 +126,6 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Email"
@@ -154,7 +152,6 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Date"
@@ -182,7 +179,6 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Time"
@@ -209,7 +205,6 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/textbox"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Pax"

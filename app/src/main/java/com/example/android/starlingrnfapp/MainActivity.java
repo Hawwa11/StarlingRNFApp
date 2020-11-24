@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     drawer = findViewById(R.id.drawer_layout);
     recyclerView = findViewById(R.id.rc_menu);
-
 
     NavigationView navigationView = findViewById(R.id.nav_view1);
         navigationView.setNavigationItemSelectedListener(this);

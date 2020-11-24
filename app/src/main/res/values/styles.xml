@@ -10,6 +10,7 @@
         <item name="colorAccent">#080D2B</item>
     </style>
 
+
     <style name="LightTheme" parent="AppTheme">
         <item name="textColor">#323030</item>
         <item name="metaTextColor">#707070</item>

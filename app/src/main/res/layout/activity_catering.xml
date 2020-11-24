@@ -210,523 +210,541 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="1950dp"
-                android:layout_centerInParent="true"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1950dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/labelInvoice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Invoice/Biling Name *"
-                android:textColor="?attr/textColor"
-                app:layout_constraintTop_toBottomOf="@+id/frame" />
-                <EditText
-                    android:id="@+id/pln_invoice"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:textColor="?attr/metaTextColor"
-                    android:hint="Enter Invoice"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/labelInvoice" />
-                <TextView
-                    android:id="@+id/label_CA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Catering Address *"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    <TextView
+                        android:id="@+id/labelInvoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Invoice/Biling Name *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintTop_toBottomOf="@+id/frame" />
 
-                <EditText
-                    android:id="@+id/pln_CA"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="16dp"
-                    android:ems="10"
-                    android:textColor="?attr/metaTextColor"
-                    android:hint="Enter Catering Adress"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CA" />
-                <TextView
-                    android:id="@+id/label_CD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Catering Date *"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CA" />
+                    <EditText
+                        android:id="@+id/pln_invoice"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:hint="Enter Invoice"
+                        android:inputType="textPersonName"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelInvoice" />
 
-                <EditText
-                    android:id="@+id/pln_CD"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="16dp"
-                    android:ems="10"
-                    android:hint="Enter Catering Date"
-                    android:textColor="?attr/metaTextColor"
-                    android:inputType="date"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CD" />
-                <TextView
-                    android:id="@+id/label_CT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Catering Time *"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CD" />
+                    <TextView
+                        android:id="@+id/label_CA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Catering Address *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-                <EditText
-                    android:id="@+id/pln_CT"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="16dp"
-                    android:ems="10"
-                    android:hint="Enter Catering Time"
-                    android:inputType="time"
-                    android:textColor="?attr/metaTextColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CT" />
-                <TextView
-                    android:id="@+id/label_Email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Email *"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CT" />
+                    <EditText
+                        android:id="@+id/pln_CA"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:ems="10"
+                        android:hint="Enter Catering Adress"
+                        android:inputType="textPersonName"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CA" />
 
-                <vn.tiki.widgets.AutoCompleteEmailEditText
-                    android:id="@+id/pln_Email"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:hint="Enter Email"
-                    android:inputType="textEmailAddress"
-                    app:domains="@array/domains"
-                    android:textColor="?attr/metaTextColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_Email" />
-                <TextView
-                    android:id="@+id/label_PN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Phone Number *"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_Email" />
+                    <TextView
+                        android:id="@+id/label_CD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Catering Date *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CA" />
 
-                <EditText
-                    android:id="@+id/pln_PN"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:hint="Enter Phone Number"
-                    android:inputType="number"
-                    android:textColor="?attr/metaTextColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_PN" />
-                <TextView
-                    android:id="@+id/LabelHere"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Enter Number of Pax Here"
-                    android:textColor="?attr/textColor"
-                    android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_PN" />
+                    <EditText
+                        android:id="@+id/pln_CD"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:ems="10"
+                        android:hint="Enter Catering Date"
+                        android:inputType="date"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CD" />
 
-                <TextView
-                    android:id="@+id/label_BG"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Bolognaise-Chicken"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/LabelHere" />
-                <EditText
-                    android:id="@+id/pln_BC"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textColor="?attr/metaTextColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_BG" />
+                    <TextView
+                        android:id="@+id/label_CT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Catering Time *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CD" />
 
-                <TextView
-                    android:id="@+id/label_BB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Bolognaise-Beef"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_BC" />
+                    <EditText
+                        android:id="@+id/pln_CT"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:ems="10"
+                        android:hint="Enter Catering Time"
+                        android:inputType="time"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CT" />
 
-                <EditText
-                    android:id="@+id/pln_BB"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textColor="?attr/metaTextColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_BB" />
-                <TextView
-                    android:id="@+id/label_CC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Carbonara-Chicken"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_BB" />
+                    <TextView
+                        android:id="@+id/label_Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Email *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CT" />
 
-                <EditText
-                    android:id="@+id/pln_CC"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CC"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_CB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Carbonara-Beef"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CC" />
+                    <vn.tiki.widgets.AutoCompleteEmailEditText
+                        android:id="@+id/pln_Email"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="?attr/metaTextColor"
+                        app:domains="@array/domains"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_Email" />
 
-                <EditText
-                    android:id="@+id/pln_CB"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CB"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_CMM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Chicken Mushroom Mornay"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CB" />
+                    <TextView
+                        android:id="@+id/label_PN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Phone Number *"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_Email" />
 
-                <EditText
-                    android:id="@+id/pln_CMM"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CMM"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_SSB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Sausage Spinach Bechamel"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CMM" />
+                    <EditText
+                        android:id="@+id/pln_PN"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:hint="Enter Phone Number"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_PN" />
 
-                <EditText
-                    android:id="@+id/pln_SSB"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_SSB"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_CConfit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Chicken Confit"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_SSB" />
+                    <TextView
+                        android:id="@+id/LabelHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Enter Number of Pax Here"
+                        android:textColor="?attr/textColor"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_PN" />
 
-                <EditText
-                    android:id="@+id/pln_CConfit"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CConfit"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_CChop"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Chicken Chop"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CConfit" />
+                    <TextView
+                        android:id="@+id/label_BG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Bolognaise-Chicken"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LabelHere" />
 
-                <EditText
-                    android:id="@+id/pln_CChop"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CChop"
-                    android:textColor="?attr/metaTextColor"/>
+                    <EditText
+                        android:id="@+id/pln_BC"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_BG" />
 
-                <TextView
-                    android:id="@+id/label_CM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Chicken Meatball"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CChop" />
+                    <TextView
+                        android:id="@+id/label_BB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Bolognaise-Beef"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_BC" />
 
-                <EditText
-                    android:id="@+id/pln_CM"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_CM"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_MNC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Mac N Cheese"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_CM" />
+                    <EditText
+                        android:id="@+id/pln_BB"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_BB" />
 
-                <EditText
-                    android:id="@+id/pln_MNC"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_MNC"
-                    android:textColor="?attr/metaTextColor"/>
+                    <TextView
+                        android:id="@+id/label_CC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Carbonara-Chicken"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_BB" />
 
-                <TextView
-                    android:id="@+id/label_MP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Mashed Potatoes"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_MNC" />
+                    <EditText
+                        android:id="@+id/pln_CC"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CC" />
 
-                <EditText
-                    android:id="@+id/pln_MP"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_MP"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_P"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Pudding"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_MP" />
+                    <TextView
+                        android:id="@+id/label_CB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Carbonara-Beef"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CC" />
 
-                <EditText
-                    android:id="@+id/pln_P"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_P"
-                    android:textColor="?attr/metaTextColor"/>
+                    <EditText
+                        android:id="@+id/pln_CB"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CB" />
 
-                <TextView
-                    android:id="@+id/label_ILT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Ice Lemon Tea"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_P" />
+                    <TextView
+                        android:id="@+id/label_CMM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Chicken Mushroom Mornay"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CB" />
 
-                <EditText
-                    android:id="@+id/pln_ILT"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_ILT"
-                    android:textColor="?attr/metaTextColor"/>
-                <TextView
-                    android:id="@+id/label_SD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Soft Drink"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_ILT" />
+                    <EditText
+                        android:id="@+id/pln_CMM"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CMM" />
 
-                <EditText
-                    android:id="@+id/pln_SD"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_SD"
-                    android:textColor="?attr/metaTextColor"/>
+                    <TextView
+                        android:id="@+id/label_SSB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Sausage Spinach Bechamel"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CMM" />
 
-                <TextView
-                    android:id="@+id/label_AR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Additional Request"
-                    android:textColor="?attr/textColor"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_SD" />
+                    <EditText
+                        android:id="@+id/pln_SSB"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_SSB" />
 
-                <EditText
-                    android:id="@+id/pln_AR"
-                    android:layout_width="310dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Type your request here!"
-                    android:inputType="textMultiLine"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/label_AR"
-                    android:textColor="?attr/metaTextColor"/>
-                <Button
-                    android:id="@+id/btn_submit"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="50dp"
-                    android:background="@color/darkblue"
-                    android:text="Submit"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pln_AR" />
+                    <TextView
+                        android:id="@+id/label_CConfit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Chicken Confit"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_SSB" />
+
+                    <EditText
+                        android:id="@+id/pln_CConfit"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CConfit" />
+
+                    <TextView
+                        android:id="@+id/label_CChop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Chicken Chop"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CConfit" />
+
+                    <EditText
+                        android:id="@+id/pln_CChop"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CChop" />
+
+                    <TextView
+                        android:id="@+id/label_CM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Chicken Meatball"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CChop" />
+
+                    <EditText
+                        android:id="@+id/pln_CM"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_CM" />
+
+                    <TextView
+                        android:id="@+id/label_MNC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mac N Cheese"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_CM" />
+
+                    <EditText
+                        android:id="@+id/pln_MNC"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_MNC" />
+
+                    <TextView
+                        android:id="@+id/label_MP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mashed Potatoes"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_MNC" />
+
+                    <EditText
+                        android:id="@+id/pln_MP"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_MP" />
+
+                    <TextView
+                        android:id="@+id/label_P"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Pudding"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_MP" />
+
+                    <EditText
+                        android:id="@+id/pln_P"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_P" />
+
+                    <TextView
+                        android:id="@+id/label_ILT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Ice Lemon Tea"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_P" />
+
+                    <EditText
+                        android:id="@+id/pln_ILT"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_ILT" />
+
+                    <TextView
+                        android:id="@+id/label_SD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Soft Drink"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_ILT" />
+
+                    <EditText
+                        android:id="@+id/pln_SD"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_SD" />
+
+                    <TextView
+                        android:id="@+id/label_AR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Additional Request"
+                        android:textColor="?attr/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_SD" />
+
+                    <EditText
+                        android:id="@+id/pln_AR"
+                        android:layout_width="310dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:ems="10"
+                        android:hint="Type your request here!"
+                        android:inputType="textMultiLine"
+                        android:textColor="?attr/metaTextColor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_AR" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@color/darkblue"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pln_AR" />
 
 
-            </LinearLayout>
+                </LinearLayout>
             </FrameLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
