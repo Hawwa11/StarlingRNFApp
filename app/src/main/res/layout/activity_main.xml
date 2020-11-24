@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:text="Signature Items"
+                android:text="Signature Dishes"
                 android:textColor="?attr/textColor"
                 android:textSize="20sp"
                 android:textStyle="bold"
