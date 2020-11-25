@@ -110,6 +110,7 @@ Button back;
                 preserve.put("rev_date", Date);
                 preserve.put("no_pax", pax);
                 preserve.put("date", date);
+                preserve.put("status","");
                 documenentReference.set(preserve);
 
 
@@ -123,6 +124,7 @@ Button back;
                 save.put("rev_date", Date);
                 save.put("no_pax", pax);
                 save.put("date", date);
+                preserve.put("status","");
                 dr.set(save);
                 Toast.makeText(ConfirmDetails.this, "Reservation Booked Succesfully.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

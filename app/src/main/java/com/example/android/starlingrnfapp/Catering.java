@@ -230,6 +230,7 @@ public class Catering extends AppCompatActivity implements NavigationView.OnNavi
                 preserve.put("T-Ice Lemon Tea", ILT);
                 preserve.put("U-Soft Drinks", SD);
                 preserve.put("V-Additional Request", AR);
+                preserve.put("W-Order Status", "");
 
                 documentReference.set(preserve);
 

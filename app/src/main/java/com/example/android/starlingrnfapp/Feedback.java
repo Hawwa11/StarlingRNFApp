@@ -77,12 +77,17 @@ String userID;
                     float rateh = Float.parseFloat(Rhygiene);
                     float ratef = Float.parseFloat(RFood);
 
+
+
+
                     service.setRating(rates);
                     food.setRating(rateh);
                     hygiene.setRating(ratef);
                 }
             }
         });
+
+        final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +99,6 @@ String userID;
                     review.setError("No review entered");
                     return;
                 }
-                final String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
 
                 DocumentReference documenentReference = fstore.collection("feedback").document(userID);
                 Map<String, Object> preserve = new HashMap<>();
@@ -104,10 +108,13 @@ String userID;
                 preserve.put("review", Review);
                 preserve.put("date", date);
                 documenentReference.set(preserve);
-                Toast.makeText(Feedback.this, "Feedback Submitted Succesfully.", Toast.LENGTH_SHORT).show();
+
+
 
             }
         });
+
+
 
         drawer = findViewById(R.id.drawer_layout);
 

@@ -751,6 +751,7 @@
                 android:layout_marginTop="10dp"
                 android:text="**Please email or call us to delete or to update any details once the catering form is submitted"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="?attr/metaTextColor"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 

@@ -114,6 +114,7 @@ FirebaseUser user;
                 edited.put("phone",Phone);
                 edited.put("rev_date",Date);
                 edited.put("edit_date",date);
+                edited.put("status","");
                 defref.set(edited).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -130,6 +131,7 @@ FirebaseUser user;
                 save.put("rev_date", Date);
                 save.put("no_pax", Pax);
                 save.put("edit_date", date);
+                save.put("status","");
                 dr.set(save);
                 Toast.makeText(EditReservation.this, "Reservation Details Updated!", Toast.LENGTH_SHORT).show();
 //
