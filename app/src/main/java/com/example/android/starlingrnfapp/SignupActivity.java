@@ -119,7 +119,6 @@ public class SignupActivity extends AppCompatActivity {
                             user.put("fname",Name);
                             user.put("email",Email);
                             user.put("phone",Phoneno);
-                            user.put("password",Password);
                             user.put("date",date);
                             documenentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
