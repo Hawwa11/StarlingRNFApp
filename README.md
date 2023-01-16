@@ -3,4 +3,4 @@
 
 Developed by Diploma in IT students from INTI International College Subang for Capstone Project.
 
-This app is a table reservation system with additional features such as cathering order and feedback forms.
+This app is a restaurant table reservation system with additional features such as cathering order and feedback forms.
